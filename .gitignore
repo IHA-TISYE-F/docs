@@ -145,3 +145,6 @@ proguard/
 *.iws
 .idea/
 .DS_Store
+
+# Windows stuff
+Thumbs.db
