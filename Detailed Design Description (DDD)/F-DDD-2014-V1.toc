@@ -8,8 +8,21 @@
 \contentsline {section}{\numberline {5}System-wide design decisions}{2}
 \contentsline {section}{\numberline {6}System architectural design}{3}
 \contentsline {subsection}{\numberline {6.1}System components}{3}
-\contentsline {subsection}{\numberline {6.2}Concept of execution}{3}
-\contentsline {subsection}{\numberline {6.3}Interface design}{3}
-\contentsline {subsubsection}{\numberline {6.3.1}External interfaces}{4}
-\contentsline {subsubsection}{\numberline {6.3.2}Internal interfaces}{6}
-\contentsline {section}{\numberline {7}Requirements traceability}{6}
+\contentsline {subsubsection}{\numberline {6.1.1}Component overview}{3}
+\contentsline {subsubsection}{\numberline {6.1.2}Detailed component description}{4}
+\contentsline {paragraph}{Cockpit Control Unit}{4}
+\contentsline {paragraph}{POD}{4}
+\contentsline {paragraph}{Dispenser}{5}
+\contentsline {paragraph}{Magazines}{5}
+\contentsline {paragraph}{Chaffs and flares}{5}
+\contentsline {paragraph}{Missile Warning System}{5}
+\contentsline {paragraph}{Electronic Control Unit}{5}
+\contentsline {paragraph}{Sensors}{5}
+\contentsline {subsection}{\numberline {6.2}Concept of execution}{5}
+\contentsline {subsection}{\numberline {6.3}Interface design}{6}
+\contentsline {subsubsection}{\numberline {6.3.1}External interfaces}{6}
+\contentsline {subsubsection}{\numberline {6.3.2}Internal interfaces}{8}
+\contentsline {paragraph}{I-IF-MWSCTRL}{8}
+\contentsline {paragraph}{I-IF-DISCTRL}{9}
+\contentsline {paragraph}{I-IF-PODPWR}{9}
+\contentsline {section}{\numberline {7}Requirements traceability}{9}

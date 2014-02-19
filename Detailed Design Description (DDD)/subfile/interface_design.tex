@@ -1,20 +1,31 @@
 %Interaction between two individual elements in a system are %affected by the interface which is connecting the two parts.
 There are different ways in which a system interact with it's environment and the other systems. The interaction happening at the various boundaries are called the system's external interfaces. The boundaries between individual components inside the system are called system's internal interfaces.\\
-The external and internal identification can fall into different types such as: electrical, mechanical, real-time data transfer and storage-and-retrieval of data.
-
-\subsubsection{External interfaces}
-<<<<<<< HEAD
-\begin{itemize}
-\item {Interface identification and diagrams.}\\
-=======
-
->>>>>>> dd97819ecd1e7e1a41804c58d23739ef828ceca4
+The external and internal identification can fall into different types such as: electrical, mechanical, real-time data transfer and storage-and-retrieval of data. All the interfaces illustrated in figure. ~\ref{fig:sigFlowDiagram}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{./images/SignalFlowDiagramDDD}\\
 	\caption{Signal Flow Diagram}
     \label{fig:sigFlowDiagram}
 \end{figure}
+
+\subsubsection{External interfaces}
+External interfaces are the interaction between the missile and the sensors, chaffs/flares and the dispensers, cockpit control unit and the aircraft computer, and lastly the pilot an the computer.
+\begin{itemize}
+\item {Interface identification and diagrams.}\\
+The system interfaces listed and identified on table. ~\ref{tab:External}.
+
+
+\begin{center}
+\begin{tabular}{ | p{2cm} | l | p{2.3cm} | p{2.3cm} | l | p{1cm} |}
+\hline
+ \textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B} & \textbf{Standard}\\ \hline
+Computer Pilot interaction & E-IF-COMPPIL & Mission computer/ Pilot & Pilot/Mission computer & \\ \hline
+ Computer control & E-IF-COMPCTRL & Cockpit unit/ Mission computer &Mission computer/Cockpit unit & \\ \hline
+Missile sensor input & E-IF-MISSENS & Cockpit unit & MWS & \\ \hline
+Chaffs/flares missile disturbance& E-IF-CHAFMISS & Chaffs and flares & Incoming missile & \\ \hline
+Dispenser Chaffs control & E-IF-DISCHAF & Dispenser & Chaffs and flares & \\ \hline
+\end{tabular}
+\end{center}
 
 \item {Project-unique identifier of interface}\\
 \begin{sidewaystable}

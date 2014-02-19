@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.9)  19 FEB 2014 16:18
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.9)  19 FEB 2014 16:24
 entering extended mode
  %&-line parsing enabled.
 **F-DDD-2014-V1.tex
@@ -305,7 +305,14 @@ Overfull \hbox (13.22214pt too wide) in paragraph at lines 2--11
  []
 
 ) (./subfile/Subcontracter_information.tex) (./subfile/scope.tex)
-(./subfile/Identification.tex) (./subfile/System_overview.tex
+
+! LaTeX Error: File `./subfile/Identification.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(./subfile/System_overview.tex
 <./images/Systemoverview.jpg, id=11, 539.01375pt x 325.96782pt>
 File: ./images/Systemoverview.jpg Graphic file (type jpg)
 
@@ -320,43 +327,231 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
  [2 <./images/Systemoverview.jpg>]) (./subfile/system_architectural_design.tex)
 
-(./subfile/system_components.tex) (./subfile/concept_of_execution.tex
-<./images/signalOverview.png, id=22, 615.80063pt x 115.18031pt>
+(./subfile/system_components.tex
+<./images/hierarchical.png, id=22, 560.8453pt x 347.04657pt>
+File: ./images/hierarchical.png Graphic file (type png)
+
+<use ./images/hierarchical.png> [3 <./images/hierarchical.png (PNG copy)>]
+[4]
+Overfull \hbox (5.90016pt too wide) in paragraph at lines 53--54
+[]\T1/cmr/m/n/10.95 The sys-tem shall be able to dis-pense a pat-tern of pay-lo
+ads pro-grammable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+) (./subfile/concept_of_execution.tex
+<./images/signalOverview.png, id=29, 615.80063pt x 115.18031pt>
 File: ./images/signalOverview.png Graphic file (type png)
 
 <use ./images/signalOverview.png>
-<./images/hierarchical.png, id=23, 560.8453pt x 347.04657pt>
-File: ./images/hierarchical.png Graphic file (type png)
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./images/hierarchical.png Graphic file (type png)
 <use ./images/hierarchical.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./subfile/interface_design.tex [3 <./images/signalOverview.png (PNG copy)>]
-<./images/SignalFlowDiagramDDD.png, id=27, 769.37437pt x 455.45157pt>
+) (./subfile/interface_design.tex [5]
+<./images/SignalFlowDiagramDDD.png, id=33, 769.37437pt x 455.45157pt>
 File: ./images/SignalFlowDiagramDDD.png Graphic file (type png)
 
 <use ./images/SignalFlowDiagramDDD.png>
-Overfull \hbox (24.68625pt too wide) in paragraph at lines 10--10
+Overfull \hbox (24.68625pt too wide) in paragraph at lines 14--14
  [][] 
  []
 
-[4 <./images/hierarchical.png (PNG copy)> <./images/SignalFlowDiagramDDD.png>]
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:sigOverviewIdentification' on page 6 undefined on
+ input line 53.
+
+[6 <./images/signalOverview.png (PNG copy)>] [7]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \item{
+           Interface identification and diagrams.}\\
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \item{
+           Interface identification and diagrams.}\\
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \item{
+           Interface identification and diagrams.}\\
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \item{
+           Project-unique identifier of interface}\\
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \item{
+           Project-unique identifier of interface}\\
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \item{
+           Project-unique identifier of interface}\\
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \end{itemize}
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--61
 
  []
 
-) (./subfile/requirements_traceability.tex) [6] (./F-DDD-2014-V1.aux)
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.63 \item I
+            -IF-MWSCTRL
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 \item I
+            -IF-DISCTRL
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \item I
+            -IF-PODPWR
+? 
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \end{itemize}
+                  
+? 
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.66 \end{itemize}
+                  
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|\T1/cmr/bx/n/10.95 Interface
+ []
+
+
+Overfull \hbox (53.46439pt too wide) in paragraph at lines 71--78
+ [] 
+ []
+
+[8 <./images/SignalFlowDiagramDDD.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]|\T1/cmr/bx/n/10.95 Interface
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]|\T1/cmr/m/n/10.95 Dispenser
+ []
+
+
+Overfull \hbox (45.91779pt too wide) in paragraph at lines 103--110
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--128
+[]|\T1/cmr/bx/n/10.95 Interface
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 130--130
+[]|\T1/cmr/m/n/10.95 Pod power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+[]|\T1/cmr/m/n/10.95 Dispenser
+ []
+
+
+Overfull \hbox (12.56053pt too wide) in paragraph at lines 126--133
+ [] 
+ []
+
+) (./subfile/requirements_traceability.tex) [9] (./F-DDD-2014-V1.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3407 strings out of 495061
- 46473 string characters out of 1182622
+ 3408 strings out of 495061
+ 46477 string characters out of 1182622
  109646 words of memory out of 3000000
- 6496 multiletter control sequences out of 15000+50000
+ 6499 multiletter control sequences out of 15000+50000
  15054 words of font info for 41 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  36i,11n,38p,405b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -368,9 +563,9 @@ k/ljfour/jknappen/ec/ecti1200.600pk> </home/fatemeh/.texmf-var/fonts/pk/ljfour/
 jknappen/ec/ecbx1095.600pk> </home/fatemeh/.texmf-var/fonts/pk/ljfour/jknappen/
 ec/ecrm1200.600pk> </home/fatemeh/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm20
 74.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on F-DDD-2014-V1.pdf (7 pages, 264433 bytes).
+Output written on F-DDD-2014-V1.pdf (10 pages, 278725 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
+ 375 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
