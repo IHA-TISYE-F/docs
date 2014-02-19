@@ -63,21 +63,10 @@ Shipping and handling&&&&&&\\
 \end{itemize}
 \newpage
 
-<<<<<<< HEAD
-=======
->>>>>>> dd97819ecd1e7e1a41804c58d23739ef828ceca4
-
 \subsubsection{Internal interfaces}
-This section describes the internal interfaces. The system interfaces can be seen on figure \ref{fig:sigOverviewIdentification}. The internal interfaces are:
+This section describes the internal interfaces. The system interfaces can be seen on figure \ref{fig:sigFlowDiagram}. The internal interfaces are:
 
 \begin{itemize}
-<<<<<<< HEAD
-\item{Interface identification and diagrams.}\\
-blaa
-\item{Project-unique identifier of interface}\\
-
-\end{itemize}
-=======
 \item I-IF-MWSCTRL
 \item I-IF-DISCTRL
 \item I-IF-PODPWR
@@ -122,7 +111,7 @@ The physical layer is defined by the MIL-STD-1553-B standard.
 \hline
  \textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B} & \textbf{Standard}\\ \hline
 
- Dispenser Control & IF-DISCTRL & Cockpit unit & Dispenser assembly & MIL-STD-1553-B\\ \hline
+ Dispenser Control & I-IF-DISCTRL & Cockpit unit & Dispenser assembly & MIL-STD-1553-B\\ \hline
  
 \end{tabular}
 \end{center}
@@ -145,10 +134,9 @@ The physical layer is defined by the MIL-STD-1553-B standard.
 \hline
  \textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B} & \textbf{Standard}\\ \hline
 
- Pod power control & IF-PODPWR & Cockpit unit & Dispenser assembly and MWS & N/A\\ \hline
+ Pod power control & I-IF-PODPWR & Cockpit unit & Dispenser assembly and MWS & N/A\\ \hline
  
 \end{tabular}
 \end{center}
 
 This analog signal connects from the cockpit unit to the dispenser assembly and the MWS in the pod. When asserted, this signal enables power to the dispenser assembly and MWS. When not asserted, the power is off.
->>>>>>> dd97819ecd1e7e1a41804c58d23739ef828ceca4
