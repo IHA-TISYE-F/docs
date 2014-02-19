@@ -19,12 +19,13 @@ This section describes the internal interfaces. The system interfaces can be see
 \begin{itemize}
 \item I-IF-MWSCTRL
 \item I-IF-DISCTRL
+\item I-IF-PODPWR
 \end{itemize}
 
 \paragraph{I-IF-MWSCTRL}
 
 \begin{center}
-\begin{tabular}{ | p{2cm} | l | p{1.6cm} | p{1.6cm} | l | p{1cm} |}
+\begin{tabular}{ | p{2cm} | l | p{2.3cm} | p{2.3cm} | l | p{1cm} |}
 \hline
  \textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B} & \textbf{Standard}\\ \hline
 
@@ -35,13 +36,19 @@ This section describes the internal interfaces. The system interfaces can be see
 
 Some description...
 \\
-Something about data:
+The data 
 \begin{itemize}
-\item Threat data
+\item Threat data (MWS $\rightarrow$ Cockpit unit)
 	\begin{itemize}
-	\item direction
-	\item type
-	\item velocity
+	\item Direction relative to north
+	\item Size
+	\item Velocity
+	\end{itemize}
+\item Aircraft navigation data (Cockpit unit $\rightarrow$ MWS)
+	\begin{itemize}
+	\item Altitude
+	\item Heading
+	\item Position data
 	\end{itemize}
 \end{itemize}
 The physical layer is defined by the MIL-STD-1553-B standard.
@@ -50,7 +57,7 @@ The physical layer is defined by the MIL-STD-1553-B standard.
 \paragraph{I-IF-DISCTRL}
 
 \begin{center}
-\begin{tabular}{ | p{2cm} | l | p{1.6cm} | p{1.6cm} | l | p{1cm} |}
+\begin{tabular}{ | p{2cm} | l | p{2.3cm} | p{2.3cm} | l | p{1cm} |}
 \hline
  \textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B} & \textbf{Standard}\\ \hline
 
@@ -69,3 +76,17 @@ Something about data:
 \end{itemize}
 
 The physical layer is defined by the MIL-STD-1553-B standard.
+
+\paragraph{I-IF-PODPWR}
+
+\begin{center}
+\begin{tabular}{ | p{2cm} | l | p{2.3cm} | p{2.3cm} | l | p{1cm} |}
+\hline
+ \textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B} & \textbf{Standard}\\ \hline
+
+ Pod power control & IF-PODPWR & Cockpit unit & Dispenser assembly and MWS & N/A\\ \hline
+ 
+\end{tabular}
+\end{center}
+
+This analog signal connects from the cockpit unit to the dispenser assembly and the MWS in the pod. When asserted, this signal enables power to the dispenser assembly and MWS. When not asserted, the power is off.
