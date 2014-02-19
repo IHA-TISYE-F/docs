@@ -21,8 +21,8 @@
 \contentsline {subsection}{\numberline {6.2}Concept of execution}{5}
 \contentsline {subsection}{\numberline {6.3}Interface design}{6}
 \contentsline {subsubsection}{\numberline {6.3.1}External interfaces}{6}
-\contentsline {subsubsection}{\numberline {6.3.2}Internal interfaces}{8}
-\contentsline {paragraph}{I-IF-MWSCTRL}{8}
-\contentsline {paragraph}{I-IF-DISCTRL}{9}
+\contentsline {subsubsection}{\numberline {6.3.2}Internal interfaces}{7}
+\contentsline {paragraph}{I-IF-MWSCTRL}{7}
+\contentsline {paragraph}{I-IF-DISCTRL}{8}
 \contentsline {paragraph}{I-IF-PODPWR}{9}
 \contentsline {section}{\numberline {7}Requirements traceability}{9}

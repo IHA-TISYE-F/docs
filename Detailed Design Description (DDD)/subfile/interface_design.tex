@@ -16,6 +16,9 @@ The system interfaces listed and identified on table. ~\ref{tab:External}.
 
 
 \begin{center}
+\begin{table}[h]
+\caption{External interface units}
+\label{tab:External}
 \begin{tabular}{ | p{2cm} | l | p{2.3cm} | p{2.3cm} | l | p{1cm} |}
 \hline
  \textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B} & \textbf{Standard}\\ \hline
@@ -25,10 +28,14 @@ Missile sensor input & E-IF-MISSENS & Cockpit unit & MWS & \\ \hline
 Chaffs/flares missile disturbance& E-IF-CHAFMISS & Chaffs and flares & Incoming missile & \\ \hline
 Dispenser Chaffs control & E-IF-DISCHAF & Dispenser & Chaffs and flares & \\ \hline
 \end{tabular}
+\end{table}
 \end{center}
 
 \item {Project-unique identifier of interface}\\
-\begin{sidewaystable}
+The unique identification listed under table.~\ref{tab:External2}. 
+\begin{sidewaystable}[h]
+\caption{External Interface Elements}
+\label{tab:External2}
 \begin{tabular}{ l l l l l l l }
 \hline
 %Environmental&&&&&&&&\\
@@ -51,15 +58,15 @@ System Housing&&&&&&\\
 Shipping and handling&&&&&&\\
 \hline
 \end{tabular}
-\caption{External Interface Elements}
 \end{sidewaystable}
 %Electrical&Mechanical&Hydraulic
 \end{itemize}
+\newpage
 
 <<<<<<< HEAD
-
 =======
 >>>>>>> dd97819ecd1e7e1a41804c58d23739ef828ceca4
+
 \subsubsection{Internal interfaces}
 This section describes the internal interfaces. The system interfaces can be seen on figure \ref{fig:sigOverviewIdentification}. The internal interfaces are:
 

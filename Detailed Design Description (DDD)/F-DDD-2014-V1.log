@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.9)  19 FEB 2014 16:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.9)  19 FEB 2014 17:26
 entering extended mode
  %&-line parsing enabled.
 **F-DDD-2014-V1.tex
@@ -356,23 +356,105 @@ File: ./images/hierarchical.png Graphic file (type png)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./subfile/interface_design.tex [5]
-<./images/SignalFlowDiagramDDD.png, id=33, 769.37437pt x 455.45157pt>
+) (./subfile/interface_design.tex
+<./images/SignalFlowDiagramDDD.png, id=30, 769.37437pt x 455.45157pt>
 File: ./images/SignalFlowDiagramDDD.png Graphic file (type png)
 
 <use ./images/SignalFlowDiagramDDD.png>
-Overfull \hbox (24.68625pt too wide) in paragraph at lines 14--14
+Overfull \hbox (24.68625pt too wide) in paragraph at lines 6--6
  [][] 
+ []
+
+[5]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/cmr/bx/n/10.95 Interface
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\T1/cmr/m/n/10.95 Computer
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 25--25
+\T1/cmr/m/n/10.95 Pi-lot in-ter-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\T1/cmr/m/n/10.95 Pilot/Mission
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\T1/cmr/m/n/10.95 Computer
+ []
+
+
+Overfull \hbox (2.60963pt too wide) in paragraph at lines 26--26
+\T1/cmr/m/n/10.95 puter/Cockpit
+ []
+
+
+Overfull \hbox (3.4085pt too wide) in paragraph at lines 28--28
+[]|\T1/cmr/m/n/10.95 Chaffs/flares
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 28--28
+\T1/cmr/m/n/10.95 mis-sile dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\T1/cmr/m/n/10.95 Chaffs and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\T1/cmr/m/n/10.95 Incoming
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\T1/cmr/m/n/10.95 Dispenser
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\T1/cmr/m/n/10.95 Chaffs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\T1/cmr/m/n/10.95 Chaffs and
+ []
+
+
+Overfull \hbox (30.08752pt too wide) in paragraph at lines 22--31
+[][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `fig:sigOverviewIdentification' on page 6 undefined on
- input line 53.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./images/signalOverview.png (PNG copy)>] [7]
+[6 <./images/signalOverview.png (PNG copy)>]
+Overfull \hbox (23.83394pt too wide) in paragraph at lines 66--69
+[]\T1/cmr/m/n/10.95 <<<<<<< HEAD ======= >>>>>>> dd97819ecd1e7e1a41804c58d23739
+ef828ceca4 
+ []
+
+
+LaTeX Warning: Reference `fig:sigOverviewIdentification' on page 7 undefined on
+ input line 71.
+
 
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
@@ -380,7 +462,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \item{
+l.75 \item{
            Interface identification and diagrams.}\\
 ? 
 
@@ -390,7 +472,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \item{
+l.75 \item{
            Interface identification and diagrams.}\\
 ? 
 
@@ -400,7 +482,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \item{
+l.75 \item{
            Interface identification and diagrams.}\\
 ? 
 
@@ -410,7 +492,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \item{
+l.77 \item{
            Project-unique identifier of interface}\\
 ? 
 
@@ -420,7 +502,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \item{
+l.77 \item{
            Project-unique identifier of interface}\\
 ? 
 
@@ -430,7 +512,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 \item{
+l.77 \item{
            Project-unique identifier of interface}\\
 ? 
 
@@ -440,11 +522,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61 \end{itemize}
+l.79 \end{itemize}
                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--61
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
 
  []
 
@@ -455,7 +537,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 \item I
+l.81 \item I
             -IF-MWSCTRL
 ? 
 
@@ -465,7 +547,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 \item I
+l.82 \item I
             -IF-DISCTRL
 ? 
 
@@ -475,7 +557,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65 \item I
+l.83 \item I
             -IF-PODPWR
 ? 
 
@@ -485,76 +567,73 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 \end{itemize}
+l.84 \end{itemize}
                   
 ? 
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.66 \end{itemize}
+l.84 \end{itemize}
                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 []|\T1/cmr/bx/n/10.95 Interface
  []
 
 
-Overfull \hbox (53.46439pt too wide) in paragraph at lines 71--78
+Overfull \hbox (53.46439pt too wide) in paragraph at lines 89--96
  [] 
  []
 
-[8 <./images/SignalFlowDiagramDDD.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[7 <./images/SignalFlowDiagramDDD.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
 []|\T1/cmr/bx/n/10.95 Interface
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []|\T1/cmr/m/n/10.95 Dispenser
  []
 
 
-Overfull \hbox (45.91779pt too wide) in paragraph at lines 103--110
+Overfull \hbox (45.91779pt too wide) in paragraph at lines 121--128
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--128
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
 []|\T1/cmr/bx/n/10.95 Interface
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 130--130
+Underfull \hbox (badness 4084) in paragraph at lines 148--148
 []|\T1/cmr/m/n/10.95 Pod power
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []|\T1/cmr/m/n/10.95 Dispenser
  []
 
 
-Overfull \hbox (12.56053pt too wide) in paragraph at lines 126--133
+Overfull \hbox (12.56053pt too wide) in paragraph at lines 144--151
  [] 
  []
 
-) (./subfile/requirements_traceability.tex) [9] (./F-DDD-2014-V1.aux)
+[8]) (./subfile/requirements_traceability.tex) [9] [10] (./F-DDD-2014-V1.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 3408 strings out of 495061
- 46477 string characters out of 1182622
- 109646 words of memory out of 3000000
- 6499 multiletter control sequences out of 15000+50000
+ 3410 strings out of 495061
+ 46506 string characters out of 1182622
+ 114646 words of memory out of 3000000
+ 6501 multiletter control sequences out of 15000+50000
  15054 words of font info for 41 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 36i,11n,38p,405b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,11n,38p,405b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/fatemeh/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home
 /fatemeh/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/fatemeh/
 .texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/fatemeh/.texmf-va
@@ -563,9 +642,9 @@ k/ljfour/jknappen/ec/ecti1200.600pk> </home/fatemeh/.texmf-var/fonts/pk/ljfour/
 jknappen/ec/ecbx1095.600pk> </home/fatemeh/.texmf-var/fonts/pk/ljfour/jknappen/
 ec/ecrm1200.600pk> </home/fatemeh/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm20
 74.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on F-DDD-2014-V1.pdf (10 pages, 278725 bytes).
+Output written on F-DDD-2014-V1.pdf (11 pages, 280636 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
+ 379 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
