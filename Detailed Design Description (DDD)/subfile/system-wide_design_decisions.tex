@@ -1,0 +1,26 @@
+System-wide design decisions for the system were made as part of the preliminary design effort. The team evaluated potential system-wide design issues and conducted analysis on how the system and its components would behave under different environmental conditions. 
+TODooo . Write more stuff here
+
+States of the system
+The system will have different states depending on what is set by the mission computer. The system has three distinct states: 
+\begin{itemize}
+\item Automatic: The system automatically detects and deploys the payload witouth the pilots interaction
+\item Semi-automatic: The system detects the enemy missile but it asks for the pilots consent before deploying the payload
+\item Manual: The pilot has to select the desired payload and deploy it himself.
+Relevant constraints: The system has a built in safety feature which will prevent deployment of the payload when the plane is not airborne.
+Detection and action upon incoming threats
+We are using the missile warning system (MWS) to detect incoming missiles. Incoming missiles are considered an input in this design where the payload deployment system will respond to this input by deploying the payload if the missile is close enough to the aircraft. The payload is located in the pod that is mounted on the aircraft.
+\end{itemize}
+Components:
+\begin{itemize}
+
+\item Pod
+The physical dimensions of the pod cannot exceed 0.5X0.5X5 meter. The pod will have the same color as the rest of the aircraft in order to blend in with the environment. The pod will have a correct aerodynamic shape in such a way that it will create as little drag as possible so it will have minimum effect on the aircrafts speed. 
+\item Cockpit unit
+To prevent dispensing the payloads on the ground we will request sensor input from the mission computer that will make the system aware if the plane is in flight.
+\item MWS
+\item Dispenser
+\item Magazines
+
+\end{itemize}
+After listing all the data. We justify that we use a cockpit unit that works with all of the data and acting on inputs from the missile warning system.
