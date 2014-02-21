@@ -1,22 +1,16 @@
-Figure.~\ref{fig:sigOverview} provides an overview of the signals and protocols used in the system. 
-The aircraft communicates with the cockpit unit using MIL-STD-1553-B. 
-The same standard is used between the cockpit unit and the missile warning system (MWS).
+subsection{Concept of execution}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.55]{./images/signalOverview.png}\\
-	\caption{System signal overview}
-    \label{fig:sigOverview}
-\end{figure}
+This paragraph describes the concept of execution among the system components, which are shown in Figure.~{fig:Component_overview}. Since the relations between system 
+components do not change dynamically, this section will describe the execution of a central scenario: Threat detected.
 
-Figure.~\ref{fig:hieraOverview} provides an overview of the components comprising the system.
-The system has two major parts; the cockpit unit and the pod. 
-The pod contains the MWS and components for handling and dispensing the payload.
+\paragraph{Threat detected scenario}\mbox{}\\
+This scenario unfolds when the sensors detect a missile threat.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.6]{./images/hierarchical.png}\\
-	\caption{Hierarchical overview of system}
-    \label{fig:hieraOverview}
-\end{figure}
 
+
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[scale=0.55]{./images/threatDetectedSequenceDiagram.png}\\
+%	\caption{Threat detected sequence diagram}
+%    \label{fig:threatDetectedSeqDia}
+%\end{figure}
