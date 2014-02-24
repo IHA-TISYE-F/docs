@@ -1,26 +1,42 @@
-System-wide design decisions for the system were made as part of the preliminary design effort. The team evaluated potential system-wide design issues and conducted analysis on how the system and its components would behave under different environmental conditions. 
-TODooo . Write more stuff here
+System-wide design decisions for the system were made as part of the preliminary design effort. The team evaluated potential system-wide design issues and conducted analysis on how the system and its components would behave under different environmental conditions. The design focuses on the different states the systems has, the hardware and software that will be a part of the aircraft.
 
-States of the system
-The system will have different states depending on what is set by the mission computer. The system has three distinct states: 
+\paragraph{States of the system} \makebox{} \\
+The system will have different states depending on what is set as input to the cockpit unit by the mission computer. The system has three distinct states: 
 \begin{itemize}
-\item Automatic: The system automatically detects and deploys the payload witouth the pilots interaction
+\item Automatic: The system automatically detects and deploys the payload without the pilots interaction
 \item Semi-automatic: The system detects the enemy missile but it asks for the pilots consent before deploying the payload
 \item Manual: The pilot has to select the desired payload and deploy it himself.
-Relevant constraints: The system has a built in safety feature which will prevent deployment of the payload when the plane is not airborne.
-Detection and action upon incoming threats
-We are using the missile warning system (MWS) to detect incoming missiles. Incoming missiles are considered an input in this design where the payload deployment system will respond to this input by deploying the payload if the missile is close enough to the aircraft. The payload is located in the pod that is mounted on the aircraft.
 \end{itemize}
-Components:
-\begin{itemize}
 
-\item Pod
-The physical dimensions of the pod cannot exceed 0.5X0.5X5 meter. The pod will have the same color as the rest of the aircraft in order to blend in with the environment. The pod will have a correct aerodynamic shape in such a way that it will create as little drag as possible so it will have minimum effect on the aircrafts speed. 
-\item Cockpit unit
-To prevent dispensing the payloads on the ground we will request sensor input from the mission computer that will make the system aware if the plane is in flight.
-\item MWS
+
+\paragraph{Safety lock to prevent dispensing on ground}  \makebox{} \\
+The system has a built in safety feature which will prevent deployment of the payload when the plane is not airborne. This will be possible by requesting information about the actual altitude of the aircraft from the mission computer.
+
+\paragraph{Detection and action upon incoming threats}  \makebox{} \\
+We are using the missile warning system (MWS) to detect incoming missiles. Incoming missiles are considered an input in this design where the payload deployment system will respond to this input by deploying the payload if the missile is close enough to the aircraft. The payload is located in the pod that is mounted on the aircraft.
+
+\paragraph{Communicating with the pilot}  \makebox{} \\
+The cockpit unit is responsible for the communication between the pilot and the system. This communication uses the mission computer as a link and the communication will therefore be purely digital.
+
+\paragraph{Loading chaffs and flares}  \makebox{} \\
+The payloads or more specific: chaffs and flares, has to be loaded manually to the magazines of the pod before take-off. A flap is present on the pod through which the chaffs and flares can be loaded by a technician.
+
+\paragraph{Physical characteristics of relevant components:} 
+
+\subparagraph{Cockpit unit}  \makebox{} \\
+The cockpit control unit will be located in the cockpit of the aircraft. The device will be as compact as possible by the current technology in order to allow more space for other devices. The role of the cockpit control unit is to be the bridge between the mission computer and the missile warning system.
+
+\subparagraph{Pod}  \makebox{} \\
+The physical dimensions of the pod cannot exceed 0.5$\times$0.5$\times$5 meter. The pod will have the same color as the rest of the aircraft in order to blend in with the environment. The pod will have a correct aerodynamic shape in such a way that it will create as little drag as possible so it will have minimum effect on the aircrafts speed.  Moreover, the weight of the pod cannot exceed 270 kg.
+The pod contains three different components:
+\begin{itemize}
 \item Dispenser
 \item Magazines
-
+\item MWS
 \end{itemize}
-After listing all the data. We justify that we use a cockpit unit that works with all of the data and acting on inputs from the missile warning system.
+
+This means that the total size of those three components cannot exceed neither the inner dimensions nor the total weight of the pod. 
+
+\paragraph{Cost} \makebox{} \\
+Cost has a significant impact on delivering a solution that will meet the requirements. The hardware components will be made out of more expensive but high quality materials and craftsmanship in order to ensure a reliable and high quality product. The parts made by the subcontractor are expected to be the same level of high quality.  
+
