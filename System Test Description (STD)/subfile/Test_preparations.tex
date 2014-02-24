@@ -1,6 +1,15 @@
 This section contains the preparations required for all tests.
 
 \paragraph{ReqNo1-T}\mbox{}\\ % Lasse
+Requirement: \textit{The system shall comprise at least three modes, manual, semi-automatic and automatic.}
+\\
+The ability for the pilot to select each mode is tested.
+
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
+
 
 \paragraph{ReqNo2-T}\mbox{}\\ % Lars N
 Requirement: \textit{Manual mode shall dispense the program selected by the pilot. The pilot may select payload, and dispense direction as defined by UR-2.}
@@ -24,8 +33,15 @@ No preparation required.
 \paragraph{ReqNo6-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo7-T}\mbox{}\\ % Lasse
-Requirement: \textit{The cockpit unit shall be able to power ON and OFF the dispensing system and the MWS.}\\
-The system main power source must be turned on.
+Requirement: \textit{The cockpit unit shall be able to power ON and OFF the dispensing system and the MWS.}
+\\
+The MWS and dispenser assembly is turned on and off. In each state the the result is verified.
+
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item The system main power source must be turned on.
+	\end{itemize}
+
 
 \paragraph{ReqNo8-T}\mbox{}\\ % Lars N
 Requirement: \textit{The system shall be able to dispense a minimum of two payloads within 0.1 sec.}
@@ -48,6 +64,15 @@ Using manual mode, the operator tries to dispense two payloads simultaneously. I
 \paragraph{ReqNo13-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo14-T}\mbox{}\\ % Lasse
+Requirement: \textit{Threat information will be provided by the Electronics Control Unit (ECU).}
+\\
+It is tested that threat information is supplied by the ECU when a threat is simulated.
+
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item A method for simulating threats must be supplied.
+	\item A method for reading the interface I-IF-MWSCTRL defined in section 6 of F-DDD-2014-V1.
+	\end{itemize} 
 
 
 \paragraph{ReqNo15-T}\mbox{}\\ % Lars N
@@ -72,7 +97,15 @@ Test-software installed on the mission computer requests status information and 
 \paragraph{ReqNo20-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo21-T}\mbox{}\\ % Lasse
+Requirement: \textit{Introduction of the system may not compromise the operation of the current weapon systems.}
+\\
+Current weapon systems are tested with the self-protection suite installed.
 
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item All current weapon systems must be available for testing.
+	\end{itemize} 
+	
 
 \paragraph{ReqNo22-T}\mbox{}\\ % Lars N
 Requirement: \textit{The system shall include a hardware implemented safety interlock to prevent dispensing on ground.}
@@ -95,7 +128,15 @@ It is assured that the aircraft is touching the ground. Then it is tried to disp
 \paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo27-T}\mbox{}\\ % Lasse
+Requirement: \textit{The pod structure must be functional when exposed to steady state acceleration levels of 4g forward, 2.5g backward, 22g upward or 10g downward.}
+\\
+The pod structure is subjected to steady accelerations, and then inspected for damages that may reduce functionality.
 
+\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item A test setup to create the required steady state accelerations must be provided.
+	\end{itemize} 
+	
 
 \paragraph{ReqNo28-T}\mbox{}\\ % Lars N
 Requirement: \textit{The total weight of pod cannot exceed 270 kg.}
@@ -118,7 +159,14 @@ The total weight of pod measured is measured using a weighing scale. It is noted
 \paragraph{ReqNo31-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo35-T}\mbox{}\\ % Lasse
+Requirement: \textit{The physical dimensions of the pod cannot exceed 0.5$\times$0.5$\times$5 meter.}
+\\
+The dimensions of the pod is measured using a measuring tape.
 
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item A measuring tape must be provided.
+	\end{itemize}
 
 \paragraph{ReqNo36-T}\mbox{}\\ % Lars N
 Requirement: \textit{The aircraft has to be loaded with the payloads before take-off.}

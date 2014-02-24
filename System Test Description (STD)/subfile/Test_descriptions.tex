@@ -1,6 +1,24 @@
 This section contains description of the tests.
 
 \paragraph{ReqNo1-T}\mbox{}\\ % Lasse
+The ability for the pilot to select each mode is tested. The operator will select each mode(manual, semi-automatic, automatic), using available inputs to the mission computer to confirm that these modes exist.
+
+\subparagraph{Inputs:}
+	\begin{enumerate}
+	\item Manual mode.
+	\item Semi-automatic mode.
+	\item Automatic mode.
+	\end{enumerate}
+	\subparagraph{Outputs:}
+	\begin{enumerate}
+	\item Confirmation of manual mode from the system to the mission computer.
+	\item Confirmation of semi-automatic mode from the system to the mission computer.
+	\item Confirmation of automatic mode from the system to the mission computer.
+	\end{enumerate}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item Entering each mode is confirmed by the mission computer.
+	\end{itemize}
 
 \paragraph{ReqNo2-T}\mbox{}\\ % Lars N
 Manual mode is selected. The operator will then dispense the desired payload in the desired direction. All combinations of payload and direction is tested.
@@ -33,7 +51,22 @@ The test official verifies that the pod includes a minimum of eight standard mag
 
 \paragraph{ReqNo7-T}\mbox{}\\ % Lasse
 Requirement: \textit{The cockpit unit shall be able to power ON and OFF the dispensing system and the MWS.}\\
-The test official turns on the dispensing system and the MWS by setting the ON/OFF switch to ON. The dispensing system and the MWS turns on.\\
+The test official turns on the dispenser assembly and the MWS using the mission computer. It is verified that the dispensing assembly and the MWS is on. Similarly turning off the MWS and dispenser assembly is also verified.
+
+\subparagraph{Inputs:}
+	\begin{enumerate}
+	\item Switch on
+	\item Switch off
+	\end{enumerate}
+	\subparagraph{Outputs:}
+	\begin{enumerate}
+	\item The MWS and dispenser assembly turns on.
+	\item The MWS and dispenser assembly turns off.
+	\end{enumerate}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The MWS and dispenser assembly can be turned on and off.
+	\end{itemize}
 
 
 \paragraph{ReqNo8-T}\mbox{}\\ % Lars N
@@ -65,7 +98,21 @@ Using manual mode, the operator tries to dispense two payloads simultaneously. I
 \paragraph{ReqNo13-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo14-T}\mbox{}\\ % Lasse
+A threat i simulated. By monitoring the interface I-IF-MWSCTRL(defined in section 6 of F-DDD-2014-V), it is then verified, that threat information is provided.
 
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item A simulated threat. 
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Threat information
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The threat information is provided by the ECU.
+	\end{itemize}
+	
 
 \paragraph{ReqNo15-T}\mbox{}\\ % Lars N
 Test-software installed on the mission computer requests status information and built-in test results from the system. The test-software verifies that the received data is correct.
@@ -95,7 +142,20 @@ Test-software installed on the mission computer requests status information and 
 \paragraph{ReqNo20-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo21-T}\mbox{}\\ % Lasse
+Every current weapon system is tested. The test of each weapon system is carried out as described by the test description of that system.
 
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Appropriate test input for each weapon system.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Appropriate output of a successful test for each weapon system.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item All weapons systems operate as before the self-protection suite was installed.
+	\end{itemize}
 
 \paragraph{ReqNo22-T}\mbox{}\\ % Lars N
 It is assured that the aircraft is touching the ground. Then it is tried to dispense payloads. It is observed whether the system dispenses the payload or not.
@@ -124,6 +184,20 @@ It is assured that the aircraft is touching the ground. Then it is tried to disp
 \paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo27-T}\mbox{}\\ % Lasse
+ Each acceleration level and direction specified in requirement no. 27 of F-SRS-2014-V1 is applied the pod structure. The pod structure is then inspected for damages that may reduce functionality.
+
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Acceleration levels and directions specified in requirement no. 27 of F-SRS-2014-V1.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The pod has no damages that may reduce functionality.
+	\end{itemize}
 
 
 \paragraph{ReqNo28-T}\mbox{}\\ % Lars N
@@ -153,6 +227,20 @@ The total weight of pod measured is measured using a weighing scale. It is noted
 \paragraph{ReqNo31-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo35-T}\mbox{}\\ % Lasse
+The dimensions of the pod is measured using a measuring tape.
+
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Dimensions.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The dimensions of the pod does not exceed 0.5$\times$0.5$\times$5 meter.
+	\end{itemize}
 
 
 \paragraph{ReqNo36-T}\mbox{}\\ % Lars N
