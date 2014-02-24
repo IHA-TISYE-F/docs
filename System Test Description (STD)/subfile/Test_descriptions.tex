@@ -3,7 +3,22 @@ This section contains description of the tests.
 \paragraph{ReqNo1-T}\mbox{}\\ % Lasse
 
 \paragraph{ReqNo2-T}\mbox{}\\ % Lars N
-
+Manual mode is selected. The operator will then dispense the desired payload in the desired direction. All combinations of payload and direction is tested.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Manual mode.
+	\item Desired dispensing combination.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Confirmation of manual mode from the system to the mission computer.
+	\item Chaffs or flares.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The dispensed payload is either chaff or flare corresponding to the one selected. The payloads are dispensed in every selected direction.
+	\end{itemize}
 
 \paragraph{ReqNo3-T}\mbox{}\\ % Sergio
 
@@ -22,7 +37,22 @@ The test official turns on the dispensing system and the MWS by setting the ON/O
 
 
 \paragraph{ReqNo8-T}\mbox{}\\ % Lars N
-
+Using manual mode, the operator tries to dispense two payloads simultaneously. It is measured whether the payloads are dispensed within 0.1 sec.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Manual mode
+	\item Dispensing command
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Confirmation of manual mode from the system to the mission computer.
+	\item Two payloads.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The two payloads are dispensed within 0.1 sec.
+	\end{itemize}
 
 \paragraph{ReqNo9-T}\mbox{}\\ % Sergio
 
@@ -38,7 +68,21 @@ The test official turns on the dispensing system and the MWS by setting the ON/O
 
 
 \paragraph{ReqNo15-T}\mbox{}\\ % Lars N
-
+Test-software installed on the mission computer requests status information and built-in test results from the system. The test-software verifies that the received data is correct.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Command that requests status information and built-in test results. 
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Status information
+	\item Built-in test results
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The status information and built-in test results is provided by the system.
+	\end{itemize}
 
 \paragraph{ReqNo16-T}\mbox{}\\ % Sergio
 
@@ -54,7 +98,20 @@ The test official turns on the dispensing system and the MWS by setting the ON/O
 
 
 \paragraph{ReqNo22-T}\mbox{}\\ % Lars N
-
+It is assured that the aircraft is touching the ground. Then it is tried to dispense payloads. It is observed whether the system dispenses the payload or not.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Command that makes the system dispense payloads 
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item A warning signal from the cockpit unit interface.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The system will not dispense on ground. Instead a warning signal will be provided from the cockpit unit.
+	\end{itemize}
 
 \paragraph{ReqNo23-T}\mbox{}\\ % Sergio
 
@@ -70,7 +127,20 @@ The test official turns on the dispensing system and the MWS by setting the ON/O
 
 
 \paragraph{ReqNo28-T}\mbox{}\\ % Lars N
-
+The total weight of pod measured is measured using a weighing scale. It is noted whether the weight is above or below 270 kg.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Weight.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The weight of the pod is below 270 kg.
+	\end{itemize}
 
 \paragraph{ReqNo29-T}\mbox{}\\ % Sergio
 
@@ -86,6 +156,20 @@ The test official turns on the dispensing system and the MWS by setting the ON/O
 
 
 \paragraph{ReqNo36-T}\mbox{}\\ % Lars N
+The aircraft is loaded with payloads before take-off. In air it is attempted to dispense the payloads. It is checked whether the loaded payloads are dispensed.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Payloads
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Payloads
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The aircraft is able to dispense the payloads that are loaded on the aircraft.
+	\end{itemize}
 
 
 \paragraph{ReqNo37-T}\mbox{}\\ % Sergio
