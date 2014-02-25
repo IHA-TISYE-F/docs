@@ -10,10 +10,10 @@ The system will have different states depending on what is set as input to the c
 
 
 \paragraph{Safety lock to prevent dispensing on ground}  \makebox{} \\
-The system has a built in safety feature which will prevent deployment of the payload when the plane is not airborne. This will be possible by requesting information about the actual altitude of the aircraft from the mission computer.
+The system has a built in safety feature which will prevent deployment of the payload when the plane is not airborne. This will be possible by an independent hardware device that measures the distance to the ground. This hardware device cannot be circumvented.
 
 \paragraph{Detection and action upon incoming threats}  \makebox{} \\
-We are using the missile warning system (MWS) to detect incoming missiles. Incoming missiles are considered an input in this design where the payload deployment system will respond to this input by deploying the payload if the missile is close enough to the aircraft. The payload is located in the pod that is mounted on the aircraft.
+We are using the missile warning system (MWS) to detect incoming missiles. Incoming missiles are considered an input in this design where the payload deployment system will respond to this input by deploying the payload upon detection of a missile. The payload is located in the pod that is mounted on the aircraft.
 
 \paragraph{Communicating with the pilot}  \makebox{} \\
 The cockpit unit is responsible for the communication between the pilot and the system. This communication uses the mission computer as a link and the communication will therefore be purely digital.
@@ -40,3 +40,6 @@ This means that the total size of those three components cannot exceed neither t
 \paragraph{Cost} \makebox{} \\
 Cost has a significant impact on delivering a solution that will meet the requirements. The hardware components will be made out of more expensive but high quality materials and craftsmanship in order to ensure a reliable and high quality product. The parts made by the subcontractor are expected to be the same level of high quality.  
 
+\paragraph{Installation} \makebox{} \\
+The CCU will be installed in the cockpit.
+The POD will be installed under the left wing with standard T-hooks.
