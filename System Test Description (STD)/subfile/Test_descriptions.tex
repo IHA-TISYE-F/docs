@@ -1,98 +1,270 @@
-This section contains the preparations required for all tests.
+This section contains description of the tests.
 
-\Paragraph{ReqNo1-T}\mbox{}\\ % Lasse
+\paragraph{ReqNo1-T}\mbox{}\\ % Lasse
+The ability for the pilot to select each mode is tested. The operator will select each mode(manual, semi-automatic, automatic), using available inputs to the mission computer to confirm that these modes exist.
 
+\subparagraph{Inputs:}
+	\begin{enumerate}
+	\item Manual mode.
+	\item Semi-automatic mode.
+	\item Automatic mode.
+	\end{enumerate}
+	\subparagraph{Outputs:}
+	\begin{enumerate}
+	\item Confirmation of manual mode from the system to the mission computer.
+	\item Confirmation of semi-automatic mode from the system to the mission computer.
+	\item Confirmation of automatic mode from the system to the mission computer.
+	\end{enumerate}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item Entering each mode is confirmed by the mission computer.
+	\end{itemize}
 
-\Paragraph{ReqNo2-T}\mbox{}\\ % Lars N
+\paragraph{ReqNo2-T}\mbox{}\\ % Lars N
+Manual mode is selected. The operator will then dispense the desired payload in the desired direction. All combinations of payload and direction is tested.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Manual mode.
+	\item Desired dispensing combination.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Confirmation of manual mode from the system to the mission computer.
+	\item Chaffs or flares.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The dispensed payload is either chaff or flare corresponding to the one selected. The payloads are dispensed in every selected direction.
+	\end{itemize}
 
-
-\Paragraph{ReqNo3-T}\mbox{}\\ % Sergio
-
-
-\Paragraph{ReqNo4-T}\mbox{}\\ % Lars J
-
-\Paragraph{ReqNo5-T}\mbox{}\\ % Ivan
-Requirement: The pod shall include a minimum of eight standard magazines.\\
-No preparation required.
-
-\Paragraph{ReqNo6-T}\mbox{}\\ % Fatemeh
-
-\Paragraph{ReqNo7-T}\mbox{}\\ % Lasse
-Requirement: The cockpit unit shall be able to power ON and OFF the dispensing system and the MWS.\\
-The system main power source must be turned on.
-
-\Paragraph{ReqNo8-T}\mbox{}\\ % Lars N
-
-
-\Paragraph{ReqNo9-T}\mbox{}\\ % Sergio
-
-
-\Paragraph{ReqNo11-T}\mbox{}\\ % Lars J
-
-\Paragraph{ReqNo12-T}\mbox{}\\ % Ivan
-
-
-\Paragraph{ReqNo13-T}\mbox{}\\ % Fatemeh
-
-\Paragraph{ReqNo14-T}\mbox{}\\ % Lasse
-
-
-\Paragraph{ReqNo15-T}\mbox{}\\ % Lars N
-
-
-\Paragraph{ReqNo16-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo3-T}\mbox{}\\ % Sergio
 
 
-\Paragraph{ReqNo17-T}\mbox{}\\ % Lars J
+\paragraph{ReqNo4-T}\mbox{}\\ % Lars J
 
-\Paragraph{ReqNo18-T}\mbox{}\\ % Ivan
+\paragraph{ReqNo5-T}\mbox{}\\ % Ivan
+Requirement: \textit{The pod shall include a minimum of eight standard magazines.}\\
+The test official verifies that the pod includes a minimum of eight standard magazines.
 
+\paragraph{ReqNo6-T}\mbox{}\\ % Fatemeh
 
-\Paragraph{ReqNo20-T}\mbox{}\\ % Fatemeh
+\paragraph{ReqNo7-T}\mbox{}\\ % Lasse
+Requirement: \textit{The cockpit unit shall be able to power ON and OFF the dispensing system and the MWS.}\\
+The test official turns on the dispenser assembly and the MWS using the mission computer. It is verified that the dispensing assembly and the MWS is on. Similarly turning off the MWS and dispenser assembly is also verified.
 
-\Paragraph{ReqNo21-T}\mbox{}\\ % Lasse
-
-
-\Paragraph{ReqNo22-T}\mbox{}\\ % Lars N
-
-
-\Paragraph{ReqNo23-T}\mbox{}\\ % Sergio
-
-
-\Paragraph{ReqNo24-T}\mbox{}\\ % Lars J
-
-\Paragraph{ReqNo25-T}\mbox{}\\ % Ivan
-
-
-\Paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
-
-\Paragraph{ReqNo27-T}\mbox{}\\ % Lasse
-
-
-\Paragraph{ReqNo28-T}\mbox{}\\ % Lars N
-
-
-\Paragraph{ReqNo29-T}\mbox{}\\ % Sergio
+\subparagraph{Inputs:}
+	\begin{enumerate}
+	\item Switch on
+	\item Switch off
+	\end{enumerate}
+	\subparagraph{Outputs:}
+	\begin{enumerate}
+	\item The MWS and dispenser assembly turns on.
+	\item The MWS and dispenser assembly turns off.
+	\end{enumerate}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The MWS and dispenser assembly can be turned on and off.
+	\end{itemize}
 
 
-\Paragraph{ReqNo41-T}\mbox{}\\ % Lars J
+\paragraph{ReqNo8-T}\mbox{}\\ % Lars N
+Using manual mode, the operator tries to dispense two payloads simultaneously. It is measured whether the payloads are dispensed within 0.1 sec.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Manual mode
+	\item Dispensing command
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Confirmation of manual mode from the system to the mission computer.
+	\item Two payloads.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The two payloads are dispensed within 0.1 sec.
+	\end{itemize}
 
-\Paragraph{ReqNo30-T}\mbox{}\\ % Ivan
+\paragraph{ReqNo9-T}\mbox{}\\ % Sergio
 
 
-\Paragraph{ReqNo31-T}\mbox{}\\ % Fatemeh
+\paragraph{ReqNo11-T}\mbox{}\\ % Lars J
 
-\Paragraph{ReqNo35-T}\mbox{}\\ % Lasse
-
-
-\Paragraph{ReqNo36-T}\mbox{}\\ % Lars N
+\paragraph{ReqNo12-T}\mbox{}\\ % Ivan
 
 
-\Paragraph{ReqNo37-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo13-T}\mbox{}\\ % Fatemeh
+
+\paragraph{ReqNo14-T}\mbox{}\\ % Lasse
+A threat i simulated. By monitoring the interface I-IF-MWSCTRL(defined in section 6 of F-DDD-2014-V), it is then verified, that threat information is provided.
+
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item A simulated threat. 
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Threat information
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The threat information is provided by the ECU.
+	\end{itemize}
+	
+
+\paragraph{ReqNo15-T}\mbox{}\\ % Lars N
+Test-software installed on the mission computer requests status information and built-in test results from the system. The test-software verifies that the received data is correct.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Command that requests status information and built-in test results. 
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Status information
+	\item Built-in test results
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The status information and built-in test results is provided by the system.
+	\end{itemize}
+
+\paragraph{ReqNo16-T}\mbox{}\\ % Sergio
 
 
-\Paragraph{ReqNo38-T}\mbox{}\\ % Lars J
+\paragraph{ReqNo17-T}\mbox{}\\ % Lars J
 
-\Paragraph{ReqNo39-T}\mbox{}\\ % Ivan
+\paragraph{ReqNo18-T}\mbox{}\\ % Ivan
 
-\Paragraph{ReqNo40-T}\mbox{}\\ % Fatemeh
+
+\paragraph{ReqNo20-T}\mbox{}\\ % Fatemeh
+
+\paragraph{ReqNo21-T}\mbox{}\\ % Lasse
+Every current weapon system is tested. The test of each weapon system is carried out as described by the test description of that system.
+
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Appropriate test input for each weapon system.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Appropriate output of a successful test for each weapon system.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item All weapons systems operate as before the self-protection suite was installed.
+	\end{itemize}
+
+\paragraph{ReqNo22-T}\mbox{}\\ % Lars N
+It is assured that the aircraft is touching the ground. Then it is tried to dispense payloads. It is observed whether the system dispenses the payload or not.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Command that makes the system dispense payloads 
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item A warning signal from the cockpit unit interface.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The system will not dispense on ground. Instead a warning signal will be provided from the cockpit unit.
+	\end{itemize}
+
+\paragraph{ReqNo23-T}\mbox{}\\ % Sergio
+
+
+\paragraph{ReqNo24-T}\mbox{}\\ % Lars J
+
+\paragraph{ReqNo25-T}\mbox{}\\ % Ivan
+
+
+\paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
+
+\paragraph{ReqNo27-T}\mbox{}\\ % Lasse
+ Each acceleration level and direction specified in requirement no. 27 of F-SRS-2014-V1 is applied the pod structure. The pod structure is then inspected for damages that may reduce functionality.
+
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Acceleration levels and directions specified in requirement no. 27 of F-SRS-2014-V1.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The pod has no damages that may reduce functionality.
+	\end{itemize}
+
+
+\paragraph{ReqNo28-T}\mbox{}\\ % Lars N
+The total weight of pod measured is measured using a weighing scale. It is noted whether the weight is above or below 270 kg.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Weight.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The weight of the pod is below 270 kg.
+	\end{itemize}
+
+\paragraph{ReqNo29-T}\mbox{}\\ % Sergio
+
+
+\paragraph{ReqNo41-T}\mbox{}\\ % Lars J
+
+\paragraph{ReqNo30-T}\mbox{}\\ % Ivan
+
+
+\paragraph{ReqNo31-T}\mbox{}\\ % Fatemeh
+
+\paragraph{ReqNo35-T}\mbox{}\\ % Lasse
+The dimensions of the pod is measured using a measuring tape.
+
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Dimensions.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The dimensions of the pod does not exceed 0.5$\times$0.5$\times$5 meter.
+	\end{itemize}
+
+
+\paragraph{ReqNo36-T}\mbox{}\\ % Lars N
+The aircraft is loaded with payloads before take-off. In air it is attempted to dispense the payloads. It is checked whether the loaded payloads are dispensed.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Payloads
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Payloads
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The aircraft is able to dispense the payloads that are loaded on the aircraft.
+	\end{itemize}
+
+
+\paragraph{ReqNo37-T}\mbox{}\\ % Sergio
+
+
+\paragraph{ReqNo38-T}\mbox{}\\ % Lars J
+
+\paragraph{ReqNo39-T}\mbox{}\\ % Ivan
+
+\paragraph{ReqNo40-T}\mbox{}\\ % Fatemeh
