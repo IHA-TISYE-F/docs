@@ -28,7 +28,10 @@ Manual mode is selected. The operator will then dispense the desired payload in 
 
 \paragraph{ReqNo5-T}\mbox{}\\ % Ivan
 Requirement: \textit{The pod shall include a minimum of eight standard magazines.}\\
-No preparation required.
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
 
 \paragraph{ReqNo6-T}\mbox{}\\ % Fatemeh
 
@@ -59,7 +62,12 @@ Using manual mode, the operator tries to dispense two payloads simultaneously. I
 \paragraph{ReqNo11-T}\mbox{}\\ % Lars J
 
 \paragraph{ReqNo12-T}\mbox{}\\ % Ivan
-
+Requirement: \textit{The cockpit unit shall communicate with the MWS via a MIL-STD-1553-B data bus.}\\
+This test verifies that the cockpit unit and the MWS communicate with the MIL-STD-1553-B data bus.
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
 
 \paragraph{ReqNo13-T}\mbox{}\\ % Fatemeh
 
@@ -92,7 +100,16 @@ Test-software installed on the mission computer requests status information and 
 \paragraph{ReqNo17-T}\mbox{}\\ % Lars J
 
 \paragraph{ReqNo18-T}\mbox{}\\ % Ivan
+Requirement: \textit{The MWS must receive navigation data from the aircraft mission computer with a latency of no more than
+10 ms. Navigation data includes aircraft attitude,heading, altitude and GPS data.}\\
 
+This test verifies that the MWS receives navigation data from the aircraft mission computer within the allowed time range.
+
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item Test navigation data including attitude, heading, altitude and GPS data must be loaded on the aircraft mission computer.
+	\item A high precision stop-watch must be provided.
+	\end{itemize}
 
 \paragraph{ReqNo20-T}\mbox{}\\ % Fatemeh
 
@@ -123,7 +140,13 @@ It is assured that the aircraft is touching the ground. Then it is tried to disp
 \paragraph{ReqNo24-T}\mbox{}\\ % Lars J
 
 \paragraph{ReqNo25-T}\mbox{}\\ % Ivan
+Requirement: \textit{The zeroize signal shall be received by the cockpit unit.}\\
 
+This test verifies that the zeroize signal is received by the cockpit unit.
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item None. 
+	\end{itemize}
 
 \paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
 
@@ -154,7 +177,14 @@ The total weight of pod measured is measured using a weighing scale. It is noted
 \paragraph{ReqNo41-T}\mbox{}\\ % Lars J
 
 \paragraph{ReqNo30-T}\mbox{}\\ % Ivan
+Requirement: \textit{The system shall include a hardware implemented safety interlock to prevent dispensing on ground.}\\
 
+This test verifies that the hardware implemented safety interlock prevents dispensing on ground.
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item The aircraft must be grounded.
+	\item The mode must be set to manual mode.
+	\end{itemize}
 
 \paragraph{ReqNo31-T}\mbox{}\\ % Fatemeh
 
@@ -184,5 +214,12 @@ The aircraft is loaded with payloads before take-off. In air it is attempted to 
 \paragraph{ReqNo38-T}\mbox{}\\ % Lars J
 
 \paragraph{ReqNo39-T}\mbox{}\\ % Ivan
+Requirement: \textit{The chaffs and flares shall be transported in accordance to Military Standard Transportation and Movement Procedures (MILSTAMP).}\\
+
+This test verifies that the chaffs and flares are transported in accordance to Military Standard Transportation and Movement Procedures (MILSTAMP).
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item None. 
+	\end{itemize}
 
 \paragraph{ReqNo40-T}\mbox{}\\ % Fatemeh
