@@ -8,27 +8,26 @@ The external and internal identification can fall into different types such as: 
   	\caption{Signal Identification Diagram}
       \label{fig:sigFlowDiagram}
   \end{figure}
-
+\newpage
 \subsubsection{External interfaces}
  External interfaces are the interaction between the missile and the sensors, chaffs/flares and the dispensers, cockpit control unit and the aircraft computer, and lastly the pilot an the computer.\\
  The system interfaces listed and identified on table. ~\ref{tab:External}.
 
 
-\begin{center}
 \begin{table}[h]
+\centering
 \caption{External interface units}
 \label{tab:External}
-\begin{tabular}{ | p{2cm} | l | p{2.3cm} | p{2.3cm} | l | p{1cm} |}
+\begin{tabular}{ | p{2cm} | l | p{3.8cm} | p{3.8cm} |}
 \hline
-\textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B} & \textbf{Standard}\\ \hline
-Computer Pilot interaction & E-IF-COMPPIL & Mission computer/ Pilot & Pilot/Mission computer &MIL-STD-1553-B \\ \hline
-Computer control & E-IF-COMPCTRL & Cockpit unit/ Mission computer &Mission computer/Cockpit unit &MIL-STD-1553-B \\ \hline
-Missile sensor input & E-IF-MISSENS & Cockpit unit & MWS &MIL-STD-1553-B \\ \hline
-Chaffs/flares missile disturbance& E-IF-CHAFMISS & Chaffs and flares & Incoming missile &MIL-STD-1553-B\\ \hline
-Dispenser Chaffs control & E-IF-DISCHAF & Dispenser & Chaffs and flares &MIL-STD-1553-B \\ \hline
+\textbf{Interface name} & \textbf{Identification} & \textbf{Endpoint A} & \textbf{Endpoint B}\\ \hline
+Computer Pilot interaction & E-IF-COMPPIL & Mission computer/ Pilot & Pilot/Mission computer\\ \hline
+Computer control & E-IF-COMPCTRL & Cockpit unit/ Mission computer &Mission computer/Cockpit unit\\ \hline
+Missile sensor input & E-IF-MISSENS & Cockpit unit & MWS\\ \hline
+Chaffs/flares missile disturbance& E-IF-CHAFMISS & Chaffs and flares & Incoming missile \\ \hline
+Dispenser Chaffs control & E-IF-DISCHAF & Dispenser & Chaffs and flares \\ \hline
 \end{tabular}
 \end{table}
-\end{center}
 
  The unique identification listed under table.~\ref{tab:External2}. 
  \begin{table}[h]
@@ -41,9 +40,9 @@ Dispenser Chaffs control & E-IF-DISCHAF & Dispenser & Chaffs and flares &MIL-STD
 \hline
  Type&Software, Hardware&Software&Environment&Environment&Mechanical\\
  \hline
- Commun. methods&Visual, Audio&Wired&Wireless&Wireless&Physical\\
+ Commun. methods&Visual, Audio & Wired & Radar & Physical & Physical\\
  \hline
- Physical compatibility&Large keyboard and Screen&Linux&High sensitivity and fast&Fast reaction&Easily disposable\\
+ Physical compatibility&Large keyboard and Screen&FPGA&High sensitivity and fast&Fast reaction&Easily disposable\\
  \hline
  \end{tabular}
  \end{table}
@@ -53,8 +52,9 @@ Dispenser Chaffs control & E-IF-DISCHAF & Dispenser & Chaffs and flares &MIL-STD
   \subsubsection{Internal interfaces}
 This section describes the internal interfaces. The system interfaces can be seen on figure \ref{fig:sigFlowDiagram}. The internal interfaces are listed in Table \ref{tab:internal}.
 
-  \begin{center}
+
  \begin{table}[h]
+ \centering
  \caption{Internal interfaces}
  \label{tab:internal}
   \begin{tabular}{ | p{2cm} | l | p{2.3cm} | p{2.3cm} | l | p{1cm} |}
@@ -65,7 +65,6 @@ This section describes the internal interfaces. The system interfaces can be see
 Pod power control & I-IF-PODPWR & Cockpit control unit & Dispenser assembly and MWS & N/A (electrical)\\ \hline
   \end{tabular}
   \end{table}
-  \end{center}
   
 \paragraph{I-IF-MWSCTRL}\mbox{}\\
 This real-time data transfer interface connects the cockpit control unit and missile warning system (MWS) in the pod. The interface is used to extract threat information from the MWS. The interface also provides the MWS with aircraft navigation data.
