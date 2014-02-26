@@ -1,6 +1,7 @@
-This section contains description of the tests.
+This section contains descriptions of the tests.
 
 \paragraph{ReqNo1-T}\mbox{}\\ % Lasse
+Requirement: \textit{The system shall comprise at least three modes, manual, semi-automatic and automatic.}\\
 The ability for the pilot to select each mode is tested. The operator will select each mode(manual, semi-automatic, automatic), using available inputs to the mission computer to confirm that these modes exist.
 
 \subparagraph{Inputs:}
@@ -21,16 +22,16 @@ The ability for the pilot to select each mode is tested. The operator will selec
 	\end{itemize}
 
 \paragraph{ReqNo2-T}\mbox{}\\ % Lars N
-Manual mode is selected. The operator will then dispense the desired payload in the desired direction. All combinations of payload and direction is tested.
+Requirement: \textit{Manual mode shall dispense the program selected by the pilot. The pilot may select payload, and dispense direction as defined by UR-2.}
+\\
+The operator will dispense the desired payload in the desired direction. All combinations of payload and direction is tested.
 \\
 	\subparagraph{Inputs:}
 	\begin{itemize}
-	\item Manual mode.
 	\item Desired dispensing combination.
 	\end{itemize}
 	\subparagraph{Outputs:}
 	\begin{itemize}
-	\item Confirmation of manual mode from the system to the mission computer.
 	\item Chaffs or flares.
 	\end{itemize}
 	\subparagraph{Expected result:}
@@ -42,6 +43,23 @@ Manual mode is selected. The operator will then dispense the desired payload in 
 
 
 \paragraph{ReqNo4-T}\mbox{}\\ % Lars J
+Requirement: \textit{Automatic mode shall initiate an intelligent threat response without pilot interaction.}\\
+A threat is simulated and the cockpit unit sends a signal to the dispenser. The dispenser then dispenses the payload.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Simulated threat
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Chaffs or flares.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The cockpit unit sends a signal to the dispenser. The dispenser then dispenses the payload.
+	\end{itemize}
+
+
 
 \paragraph{ReqNo5-T}\mbox{}\\ % Ivan
 Requirement: \textit{The pod shall include a minimum of eight standard magazines.}\\
@@ -57,7 +75,8 @@ The test official verifies that the pod includes a minimum of eight standard mag
 Requirement: \textit{The pod shall be able to dispense forwards, downwards and sideways.}\\
 This test verifies the mechanical capability and reliability. The test applies to the pod components, meaning magazines and dispensers.
 \paragraph{ReqNo7-T}\mbox{}\\ % Lasse
-Requirement: \textit{The cockpit unit shall be able to power ON and OFF the dispensing system and the MWS.}\\
+Requirement: \textit{The cockpit unit shall be able to power ON and OFF the dispensing system and the MWS.}
+\\
 The test official turns on the dispenser assembly and the MWS using the mission computer. It is verified that the dispensing assembly and the MWS is on. Similarly turning off the MWS and dispenser assembly is also verified.
 
 \subparagraph{Inputs:}
@@ -77,6 +96,8 @@ The test official turns on the dispenser assembly and the MWS using the mission 
 
 
 \paragraph{ReqNo8-T}\mbox{}\\ % Lars N
+Requirement: \textit{The system shall be able to dispense a minimum of two payloads within 0.1 sec.}
+\\
 Using manual mode, the operator tries to dispense two payloads simultaneously. It is measured whether the payloads are dispensed within 0.1 sec.
 \\
 	\subparagraph{Inputs:}
@@ -98,6 +119,19 @@ Using manual mode, the operator tries to dispense two payloads simultaneously. I
 
 
 \paragraph{ReqNo11-T}\mbox{}\\ % Lars J
+Requirement: \textit{The System shall be able to erase prior defense patterns and usage statistics upon receiving the string 'zeroize' from the mission computer.}\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item 'zeroize' string
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Confirmation of erasure.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The system has erased prior defense patterns and usage statistics.
+	\end{itemize}
 
 \paragraph{ReqNo12-T}\mbox{}\\ % Ivan
 Requirement: \textit{The cockpit unit shall communicate with the MWS via a MIL-STD-1553-B data bus.}\\
@@ -112,6 +146,7 @@ The test official verifies that the communication bus between the cockpit unit a
 Requirement: \textit{Threats shall be transmitted to the aircraft mission computer in body frame format (relative to aircraft) for displaying purposes.}\\
 The test includes creating different types of threats and testing the reliability of the aircraft mission computer for displaying the threat.
 \paragraph{ReqNo14-T}\mbox{}\\ % Lasse
+Requirement: \textit{Threat information will be provided by the Electronics Control Unit (ECU).}\\
 A threat i simulated. By monitoring the interface I-IF-MWSCTRL(defined in section 6 of F-DDD-2014-V), it is then verified, that threat information is provided.
 
 	\subparagraph{Inputs:}
@@ -129,6 +164,9 @@ A threat i simulated. By monitoring the interface I-IF-MWSCTRL(defined in sectio
 	
 
 \paragraph{ReqNo15-T}\mbox{}\\ % Lars N
+Requirement: \textit{The system shall provide the aircraft mission computer
+with status information and built-in test results.}
+\\
 Test-software installed on the mission computer requests status information and built-in test results from the system. The test-software verifies that the received data is correct.
 \\
 	\subparagraph{Inputs:}
@@ -149,6 +187,21 @@ Test-software installed on the mission computer requests status information and 
 
 
 \paragraph{ReqNo17-T}\mbox{}\\ % Lars J
+Requirement: \textit{The system status on individual LRU level shall be provided by cockpit unit.}\\
+
+\subparagraph{Inputs:}
+	\begin{enumerate}
+	\item Status request for all Pod components.
+	\end{enumerate}
+\subparagraph{Outputs:}
+	\begin{enumerate}
+	\item Status information from all Pod components to the cockpit unit.
+	\end{enumerate}
+\subparagraph{Expected result:}
+	\begin{itemize}
+	\item All status information is sent from the cockpit unit.
+	\end{itemize}
+
 
 \paragraph{ReqNo18-T}\mbox{}\\ % Ivan
 Requirement: \textit{The MWS must receive navigation data from the aircraft mission computer with a latency of no more than
@@ -174,6 +227,8 @@ Navigation data is sent from the aircraft mission computer to the MWS. The time 
 \paragraph{ReqNo20-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo21-T}\mbox{}\\ % Lasse
+Requirement: \textit{Introduction of the system may not compromise the operation of the current weapon systems.}
+\\
 Every current weapon system is tested. The test of each weapon system is carried out as described by the test description of that system.
 
 	\subparagraph{Inputs:}
@@ -190,6 +245,8 @@ Every current weapon system is tested. The test of each weapon system is carried
 	\end{itemize}
 
 \paragraph{ReqNo22-T}\mbox{}\\ % Lars N
+Requirement: \textit{The system shall include a hardware implemented safety interlock to prevent dispensing on ground.}
+\\
 It is assured that the aircraft is touching the ground. Then it is tried to dispense payloads. It is observed whether the system dispenses the payload or not.
 \\
 	\subparagraph{Inputs:}
@@ -209,6 +266,20 @@ It is assured that the aircraft is touching the ground. Then it is tried to disp
 
 
 \paragraph{ReqNo24-T}\mbox{}\\ % Lars J
+Requirement: \textit{The system shall be able to erase sensitive data upon input from a discrete zeroize signal from aircraft.}\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item 'zeroize' string
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Confirmation of erasure.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The cockpit unit recieves 'zeroize' string and initiates the erasing of prior defense patterns and usage statistics.
+	\end{itemize}
+
 
 \paragraph{ReqNo25-T}\mbox{}\\ % Ivan
 Requirement: \textit{The zeroize signal shall be received by the cockpit unit.}\\
@@ -230,7 +301,9 @@ The zeroize signal is transmitted to the cockpit unit.
 \paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo27-T}\mbox{}\\ % Lasse
- Each acceleration level and direction specified in requirement no. 27 of F-SRS-2014-V1 is applied the pod structure. The pod structure is then inspected for damages that may reduce functionality.
+Requirement: \textit{The pod structure must be functional when exposed to steady state acceleration levels of 4g forward, 2.5g backward, 22g upward or 10g downward.}
+\\
+Each acceleration level and direction specified in requirement no. 27 of F-SRS-2014-V1 is applied the pod structure. The pod structure is then inspected for damages that may reduce functionality.
 
 	\subparagraph{Inputs:}
 	\begin{itemize}
@@ -247,6 +320,8 @@ The zeroize signal is transmitted to the cockpit unit.
 
 
 \paragraph{ReqNo28-T}\mbox{}\\ % Lars N
+Requirement: \textit{The total weight of pod cannot exceed 270 kg.}
+\\
 The total weight of pod measured is measured using a weighing scale. It is noted whether the weight is above or below 270 kg.
 \\
 	\subparagraph{Inputs:}
@@ -266,6 +341,14 @@ The total weight of pod measured is measured using a weighing scale. It is noted
 
 
 \paragraph{ReqNo41-T}\mbox{}\\ % Lars J
+Requirement: \textit{The pod shall be operational at temperatures of maximum 95 degrees Celcius on outer skin and 152 degrees Celcius on leading egde for a maximum of 25 minutes.}\\
+
+The pod is heated to 95 degrees Celcius on outer skin and 152 degrees Celcius on leading egde for 25 min. 
+
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The pod is still operational.
+	\end{itemize}
 
 \paragraph{ReqNo30-T}\mbox{}\\ % Ivan
 Requirement: \textit{The system shall include a hardware implemented safety interlock to prevent dispensing on ground.}\\
@@ -290,6 +373,8 @@ The test official attempts to dispense the payload.
 \paragraph{ReqNo31-T}\mbox{}\\ % Fatemeh
 
 \paragraph{ReqNo35-T}\mbox{}\\ % Lasse
+Requirement: \textit{The physical dimensions of the pod cannot exceed 0.5$\times$0.5$\times$5 meter.}
+\\
 The dimensions of the pod is measured using a measuring tape.
 
 	\subparagraph{Inputs:}
@@ -307,6 +392,8 @@ The dimensions of the pod is measured using a measuring tape.
 
 
 \paragraph{ReqNo36-T}\mbox{}\\ % Lars N
+Requirement: \textit{The aircraft has to be loaded with the payloads before take-off.}
+\\
 The aircraft is loaded with payloads before take-off. In air it is attempted to dispense the payloads. It is checked whether the loaded payloads are dispensed.
 \\
 	\subparagraph{Inputs:}
@@ -327,6 +414,12 @@ The aircraft is loaded with payloads before take-off. In air it is attempted to 
 
 
 \paragraph{ReqNo38-T}\mbox{}\\ % Lars J
+Requirement: \textit{Technicians must be educated in maintenance of the system.}\\
+
+\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The technicians have attended and passed the maintenance course provided by Terma A/S.
+	\end{itemize}
 
 \paragraph{ReqNo39-T}\mbox{}\\ % Ivan
 Requirement: \textit{The chaffs and flares shall be transported in accordance to Military Standard Transportation and Movement Procedures (MILSTAMP).}\\
