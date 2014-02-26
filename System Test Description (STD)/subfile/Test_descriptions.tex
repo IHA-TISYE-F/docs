@@ -74,6 +74,22 @@ The test official verifies that the pod includes a minimum of eight standard mag
 \paragraph{ReqNo6-T}\mbox{}\\ % Fatemeh
 Requirement: \textit{The pod shall be able to dispense forwards, downwards and sideways.}\\
 This test verifies the mechanical capability and reliability. The test applies to the pod components, meaning magazines and dispensers.
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Dispensing commands for forward, downward and sideways directions
+	\item The complete pod unit
+	\item timer
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Status output of the dispenser
+	\item Direction of movement after the command applied
+	\item Time taken from the dispense command to actual dispense
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The movement directions of pod be in accordance with the dispenser commands and be applied in a fraction of second.
+	\end{itemize}
 \paragraph{ReqNo7-T}\mbox{}\\ % Lasse
 Requirement: \textit{The cockpit unit shall be able to power ON and OFF the dispensing system and the MWS.}
 \\
@@ -144,7 +160,20 @@ The test official verifies that the communication bus between the cockpit unit a
 
 \paragraph{ReqNo13-T}\mbox{}\\ % Fatemeh
 Requirement: \textit{Threats shall be transmitted to the aircraft mission computer in body frame format (relative to aircraft) for displaying purposes.}\\
-The test includes creating different types of threats and testing the reliability of the aircraft mission computer for displaying the threat.
+The test includes simulating different types of threats from different directions and testing the reliability of the aircraft mission computer for displaying the threat.
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Threats
+	\item Timer
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Mission computer
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The display shows illustratively the coming threats for different directions.
+	\end{itemize}
 \paragraph{ReqNo14-T}\mbox{}\\ % Lasse
 Requirement: \textit{Threat information will be provided by the Electronics Control Unit (ECU).}\\
 A threat i simulated. By monitoring the interface I-IF-MWSCTRL(defined in section 6 of F-DDD-2014-V), it is then verified, that threat information is provided.
@@ -225,7 +254,23 @@ Navigation data is sent from the aircraft mission computer to the MWS. The time 
 	\end{itemize}
 
 \paragraph{ReqNo20-T}\mbox{}\\ % Fatemeh
-
+Requirement: \textit{The cockpit unit shall communicate with the mission computer via a MIL-STD-1553-B data bus.}\\
+Test includes sending commands to the mission computer and making it understandable for the pilot.
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Cockpit unit
+	\item MIL-STD-1553-B data bus
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Mission computer
+	\item pilot
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The communication from the cockpit unit and the computer mission be flawless and understandable by a pilot.
+	\end{itemize}
+	
 \paragraph{ReqNo21-T}\mbox{}\\ % Lasse
 Requirement: \textit{Introduction of the system may not compromise the operation of the current weapon systems.}
 \\
@@ -299,7 +344,21 @@ The zeroize signal is transmitted to the cockpit unit.
 	\end{itemize}
 
 \paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
-
+Requirement: \textit{The magasines shall be stored at no lower than -10 degrees Celcius and no higher than 70 degrees Celcius.}
+The temperature at which the magasines are stored shall be verified to be between -10 degrees Celcius and 70 degrees Celcius.
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Storage rooms for magazines with accurate temperature control 
+	\item magazines
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Measured temperature
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The temperature of the storage room for the magazines does not go out of -10 to 70 degree Celcius. 
+	\end{itemize}
 \paragraph{ReqNo27-T}\mbox{}\\ % Lasse
 Requirement: \textit{The pod structure must be functional when exposed to steady state acceleration levels of 4g forward, 2.5g backward, 22g upward or 10g downward.}
 \\
@@ -371,7 +430,20 @@ The test official attempts to dispense the payload.
 	\end{itemize}
 
 \paragraph{ReqNo31-T}\mbox{}\\ % Fatemeh
-
+Requirement: \textit{The system shall provide a method of loading software to MWS.}\\
+The system applied the method for loading software.
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Software for MSW
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Method for applying the software
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item Working method for applying the SW software.
+	\end{itemize}
 \paragraph{ReqNo35-T}\mbox{}\\ % Lasse
 Requirement: \textit{The physical dimensions of the pod cannot exceed 0.5$\times$0.5$\times$5 meter.}
 \\
@@ -432,3 +504,19 @@ The test official verifies that the chaffs and flares are transported in accorda
 	\end{itemize}
 
 \paragraph{ReqNo40-T}\mbox{}\\ % Fatemeh
+Requirement: \textit{The chaffs and flares shall be labeled and packed in accordance to MIL-STD-2073-1E}\\
+Packing and labelling of chaffs and flares must comply with MIL-STD-2073-1E.
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Packing and labelling mechanism
+	\item Chaffs and flares
+	\item MIL-STD-2073-1E standard
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Status of standard follow-up
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The packing and labelling of chaffs and flares complies with MIL-STD-2073-1E.
+	\end{itemize}

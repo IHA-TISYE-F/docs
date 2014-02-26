@@ -94,10 +94,14 @@ This test verifies that the cockpit unit and the MWS communicate with the MIL-ST
 
 \paragraph{ReqNo13-T}\mbox{}\\ % Fatemeh
 Requirement: \textit{Threats shall be transmitted to the aircraft mission computer in body frame format (relative to aircraft) for displaying purposes.}\\
-The test includes creating different types of threats and testing the reliability of the aircraft mission computer for displaying the threat.
+The test includes simulating different types of threats from different directions and testing the reliability of the aircraft mission computer for displaying the threat.
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
-	\item 
+	\item Threat simulation should be comparable to the real case threat
+	\item Different directions relative to north and different velocities should be provided for the simulated threat.
+	\item Different displaying tools, such as audio and visual needed
+	\item Time calculator needs for calculating the time takes for transmitting the threat from MSW to display.
+	\item Pilot reaction time for testing different display methods
 	\end{itemize}
 
 \paragraph{ReqNo14-T}\mbox{}\\ % Lasse
@@ -150,10 +154,12 @@ This test verifies that the MWS receives navigation data from the aircraft missi
 	\end{itemize}
 
 \paragraph{ReqNo20-T}\mbox{}\\ % Fatemeh
-Requirement: \textit{The cockpit unit shall communicate with the mission computer via a MIL-STD-1553-B data bus.}\\
+Requirement: \textit{The cockpit unit shall communicate with the mission computer via a MIX-STD-1553-B data bus.}\\
+Test includes sending commands to the mission computer and making it understandable for the pilot.
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
-	\item None.
+	\item The communication of cockpit unit with Pod should have been done and tested before hand.
+	\item The mission computer need compatibility for data bus.
 	\end{itemize}
 
 \paragraph{ReqNo21-T}\mbox{}\\ % Lasse
@@ -193,6 +199,8 @@ This test verifies that the zeroize signal is received by the cockpit unit.
 
 \paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
 Requirement: \textit{The magasines shall be stored at no lower than -10 degrees Celcius and no higher than 70 degrees Celcius.}
+The temperature at which the magasines are stored shall be verified to be between -10 degrees Celcius and 70 degrees Celcius.
+
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
 	\item None.
@@ -243,9 +251,11 @@ This test verifies that the hardware implemented safety interlock prevents dispe
 
 \paragraph{ReqNo31-T}\mbox{}\\ % Fatemeh
 Requirement: \textit{The system shall provide a method of loading software to MWS.}\\
+The system applied the method for loading software.
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
-	\item None.
+	\item This has to be done before the other tests involving MWS.
+	\item Different methods should be provided
 	\end{itemize}
 
 \paragraph{ReqNo35-T}\mbox{}\\ % Lasse
@@ -290,9 +300,10 @@ This test verifies that the chaffs and flares are transported in accordance to M
 	\end{itemize}
 
 \paragraph{ReqNo40-T}\mbox{}\\ % Fatemeh
-Requirement: \textit{The chas and ares shall be labeled and packed in
-acordance to MIL-STD-2073-1E}\\
+Requirement: \textit{The chaffs and flares shall be labeled and packed in accordance to MIL-STD-2073-1E}\\
+Packing and labelling of chaffs and flares must comply with MIL-STD-2073-1E.
+
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
-	\item None.
+	\item Packaging and labelling method should be provided. 
 	\end{itemize}
