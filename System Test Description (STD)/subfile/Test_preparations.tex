@@ -25,6 +25,14 @@ Manual mode is selected. The operator will then dispense the desired payload in 
 
 
 \paragraph{ReqNo4-T}\mbox{}\\ % Lars J
+Requirement: \textit{Automatic mode shall initiate an intelligent threat re-
+sponse without pilot interaction.}\\
+This test verifies that the cockpit unit, in automatic mode, can send a signal to the dispenser.
+
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item Automatic mode is selected.
+	\end{itemize}
 
 \paragraph{ReqNo5-T}\mbox{}\\ % Ivan
 Requirement: \textit{The pod shall include a minimum of eight standard magazines.}\\
@@ -61,6 +69,12 @@ Using manual mode, the operator tries to dispense two payloads simultaneously. I
 
 
 \paragraph{ReqNo11-T}\mbox{}\\ % Lars J
+Requirement: \textit{The System shall be able to erase prior defense patterns and usage statistics upon receiving the string 'zeroize' from the mission computer.}\\
+This test verifies that the is able to erase prior defence patterns and usage statistics.
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item None
+	\end{itemize}
 
 \paragraph{ReqNo12-T}\mbox{}\\ % Ivan
 Requirement: \textit{The cockpit unit shall communicate with the MWS via a MIL-STD-1553-B data bus.}\\
@@ -99,6 +113,15 @@ Test-software installed on the mission computer requests status information and 
 
 
 \paragraph{ReqNo17-T}\mbox{}\\ % Lars J
+Requirement: \textit{The system status on individual LRU level shall be
+provided by cockpit unit.}\\
+This test verifies that the Cockpit Unit can provide status updates from the Pod.\\
+
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item The Pod must be attached to the plane.
+	\end{itemize}
+
 
 \paragraph{ReqNo18-T}\mbox{}\\ % Ivan
 Requirement: \textit{The MWS must receive navigation data from the aircraft mission computer with a latency of no more than
@@ -140,8 +163,6 @@ It is assured that the aircraft is touching the ground. Then it is tried to disp
 %The hardware interlock engages when the landing gear is on the ground and not at a given altitude. This is of course also the case for the tex file Test_descriptions.tex
 
 \paragraph{ReqNo24-T}\mbox{}\\ % Lars J
-
-\paragraph{ReqNo25-T}\mbox{}\\ % Ivan
 Requirement: \textit{The zeroize signal shall be received by the cockpit unit.}\\
 
 This test verifies that the zeroize signal is received by the cockpit unit.
@@ -149,6 +170,7 @@ This test verifies that the zeroize signal is received by the cockpit unit.
 	\begin{itemize}
 	\item None. 
 	\end{itemize}
+\paragraph{ReqNo25-T}\mbox{}\\ % Ivan
 
 \paragraph{ReqNo26-T}\mbox{}\\ % Fatemeh
 
@@ -177,7 +199,13 @@ The total weight of pod measured is measured using a weighing scale. It is noted
 
 
 \paragraph{ReqNo41-T}\mbox{}\\ % Lars J
+Requirement: \textit{The pod shall be operational at temperatures of maximum 95 degrees Celcius on outer skin and 152 degrees Celcius on leading egde for a maximum of 25 minutes.}
+This test verifies that the pod is operational at the given temperatures and places for 25 min.\\
 
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item A thermometer must be provided.
+	\end{itemize} 
 \paragraph{ReqNo30-T}\mbox{}\\ % Ivan
 Requirement: \textit{The system shall include a hardware implemented safety interlock to prevent dispensing on ground.}\\
 
@@ -214,6 +242,13 @@ The aircraft is loaded with payloads before take-off. In air it is attempted to 
 
 
 \paragraph{ReqNo38-T}\mbox{}\\ % Lars J
+Requirement: \textit{Technicians must be educated in maintenance of the system.}\\
+This test verifies that the technicians are licensed in maintaining the system.
+	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item The technicians must have attended and passed the maintenance course provided by Terma A/S. 
+	\end{itemize}
+
 
 \paragraph{ReqNo39-T}\mbox{}\\ % Ivan
 Requirement: \textit{The chaffs and flares shall be transported in accordance to Military Standard Transportation and Movement Procedures (MILSTAMP).}\\
