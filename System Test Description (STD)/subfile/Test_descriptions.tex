@@ -39,7 +39,25 @@ The operator will dispense the desired payload in the desired direction. All com
 	\item The dispensed payload is either chaff or flare corresponding to the one selected. The payloads are dispensed in every selected direction.
 	\end{itemize}
 
-\paragraph{ReqNo3-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo3-T}\mbox{}\\ % Sergiu
+Requirement: \textit{Semi automatic shall initiate an intelligent threat response upon consent from the pilot.}
+\\
+This test verifies that the cockpit unit, in semi automatic mode, can send a signal that requests the pilots consent before deploying the payload. All combinations of payload and direction is tested
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Pilots consent.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Chaffs or flares.
+	\item None.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The dispensed payload is either chaff or flare corresponding to the one selected. The payloads are dispensed in every selected direction.
+	\item Nothing is dispensed because the pilot did not give his consent.
+	\end{itemize}
 
 
 \paragraph{ReqNo4-T}\mbox{}\\ % Lars J
@@ -131,7 +149,25 @@ Using manual mode, the operator tries to dispense two payloads simultaneously. I
 	\item The two payloads are dispensed within 0.1 sec.
 	\end{itemize}
 
-\paragraph{ReqNo9-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo9-T}\mbox{}\\ % Sergiu
+Requirement: \textit{The system shall be able to dispense a pattern of payloads programmable by the customer.}
+\\
+This test verifies that the program outputs in the desired pattern that was programmed by the customer. Afterwards it is loaded and tested on the pod to see the it dispense in the desired pattern.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Manual mode
+	\item Dispensing command
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Confirmation of manual mode from the system to the mission computer.
+	\item Chaffs or flares.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The payloads are dispensed as programmed by the customer
+	\end{itemize}
 
 
 \paragraph{ReqNo11-T}\mbox{}\\ % Lars J
@@ -212,7 +248,25 @@ Test-software installed on the mission computer requests status information and 
 	\item The status information and built-in test results is provided by the system.
 	\end{itemize}
 
-\paragraph{ReqNo16-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo16-T}\mbox{}\\ % Sergiu
+Requirement: \textit{The system shall interface the aircraft intercom system to provide audio cues and warnings.}
+\\
+This test verifies that the aircraft intercom system receives information from the system.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Relevant information that needs to trigger audio cues and warnings.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Audio cues
+	\item Audio warnings
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The audio information work as programmed and can provide valuable
+	feedback for the pilot during the mission.
+	\end{itemize}
 
 
 \paragraph{ReqNo17-T}\mbox{}\\ % Lars J
@@ -308,6 +362,23 @@ It is assured that the aircraft is touching the ground. Then it is tried to disp
 	\end{itemize}
 
 \paragraph{ReqNo23-T}\mbox{}\\ % Sergio
+Requirement: \textit{The hardware implemented safety lock shall be activated when the landing gear is on the ground.}
+\\
+This test verifies that the safety lock activates and remains active while the
+landing gear is on the ground.
+\\
+	\subparagraph{Inputs:}
+	\begin{itemize}
+	\item Landing gear on the ground.
+	\end{itemize}
+	\subparagraph{Outputs:}
+	\begin{itemize}
+	\item Safety lock active.
+	\end{itemize}
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The sfatey lock is active.
+	\end{itemize}
 
 
 \paragraph{ReqNo24-T}\mbox{}\\ % Lars J
@@ -396,7 +467,18 @@ The total weight of pod measured is measured using a weighing scale. It is noted
 	\item The weight of the pod is below 270 kg.
 	\end{itemize}
 
-\paragraph{ReqNo29-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo29-T}\mbox{}\\ % Sergiu
+Requirement: \textit{The pod shall be operational at temperatures of maximum 134 degree celsius on outer skin and 152 degree celsius on leading edge for maximum 3 minutes.}
+\\
+This test verifies that the pod is operational at temperatures of up to 134 celsius on the outer skin. It also checks that the pod is operational after it was subjugated to a temperature of 152 degrees for 3 minutes.
+\\
+
+	\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The pod is still operational after it has been submited to the different
+	enviormental factors mentioned above.
+	\end{itemize}
+
 
 
 \paragraph{ReqNo41-T}\mbox{}\\ % Lars J
@@ -482,8 +564,15 @@ The aircraft is loaded with payloads before take-off. In air it is attempted to 
 	\end{itemize}
 
 
-\paragraph{ReqNo37-T}\mbox{}\\ % Sergio
-
+\paragraph{ReqNo37-T}\mbox{}\\ % Sergiu
+Requirement: \textit{Pilots must be educated in handling the system from the cockpit.}
+\\
+This test verifies that the pilots are properly trained in handling the system from the cockpit.
+\\
+\subparagraph{Expected result:}
+	\begin{itemize}
+	\item The pilots have attended and passed the training course provided by Terma	A/S.
+	\end{itemize}
 
 \paragraph{ReqNo38-T}\mbox{}\\ % Lars J
 Requirement: \textit{Technicians must be educated in maintenance of the system.}\\
