@@ -1,0 +1,44 @@
+\documentclass[a4paper, oneside, 11pt]{article}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{tabularx}
+\addtolength{\textheight}{+3cm}
+\begin{document}
+\input{./title.tex}
+\addtolength{\topmargin}{-2cm}
+\tableofcontents
+
+\noindent
+\vspace{5cm}
+\section{Revision history}
+\input{./subfile/revision_history.tex}
+\section{Stakeholders}
+\input{./subfile/stakeholder.tex}
+\newpage
+\section{Scope}
+\input{./subfile/scope.tex}
+\subsection{Identification}
+\input{./subfile/identification.tex}
+\subsection{System-overview}
+\input{./subfile/System_overview.tex}
+\subsection{Document overview}
+\input{./subfile/Document_overview.tex}
+\section{Referenced documents}
+\input{./subfile/referenced_documents.tex}
+\section{Test preparations}
+\input{./subfile/Test_preparations.tex}
+\section{Test descriptions}
+\input{./subfile/Test_descriptions.tex}
+\section{Requirements traceability}
+\input{./subfile/requirements_traceability.tex}
+%\section{Other}
+%\input{./subfile/other.tex}
+\end{document}
