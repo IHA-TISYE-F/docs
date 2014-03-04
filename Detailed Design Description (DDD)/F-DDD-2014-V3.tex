@@ -1,0 +1,48 @@
+\documentclass[a4paper, oneside, 11pt]{article}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx,rotating,booktabs}
+\usepackage[verbose]{placeins}
+\usepackage{amsthm}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{tabularx}
+\addtolength{\textheight}{+3cm}
+\begin{document}
+\input{./titleV3.tex}
+\addtolength{\topmargin}{-2cm}
+\tableofcontents
+
+\noindent
+\section{Revision history}
+\input{./subfile/revision_history.tex}
+\section{Stakeholders}
+\input{./subfile/stakeholder.tex}
+\section{Subcontractor Information}
+\input{./subfile/Subcontracter_information.tex}
+\section{Scope}
+\input{./subfile/scope.tex}
+\subsection{Identification}
+\input{./subfile/identification.tex}
+\subsection{System-overview}
+\input{./subfile/System_overview.tex}
+%\subsection{Document overview}
+%\input{./subfile/Document_overview.tex}
+\section{System-wide design decisions}
+\input{./subfile/system-wide_design_decisions.tex}
+\section{System architectural design}
+\input{./subfile/system_architectural_design.tex}
+\subsection{System components}
+\input{./subfile/system_components.tex}
+\subsection{Concept of execution}
+\input{./subfile/concept_of_execution.tex}
+\subsection{Interface design}
+\input{./subfile/interface_design.tex}
+\section{Requirements traceability}
+\input{./subfile/requirements_traceability.tex}
+\end{document}
