@@ -108,9 +108,14 @@ This test verifies that the program outputs in the desired pattern that was prog
 	\end{itemize}
 
 \paragraph{ReqNo11-T}\mbox{}\\ % Lars J
-Requirement: \textit{The System shall be able to erase prior defense patterns and usage statistics upon receiving the string 'zeroize' from the mission computer.}\\
+Requirement: \textit{The System shall be able to erase prior defence patterns and usage statistics upon receiving the string 'zeroize' from the mission computer.}\\
 This test verifies that the system is able to erase prior defence patterns and usage statistics.
 	\subparagraph{Preparations needed:}
+	\begin{itemize}
+	\item The cockpit unit must be connected to the mission computer.
+	\end{itemize}
+
+	\subparagraph{Equipment required:}
 	\begin{itemize}
 	\item None.
 	\end{itemize}
@@ -176,9 +181,13 @@ This test verifies that the Cockpit Unit can provide status updates from the Pod
 
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
-	\item The Pod must be attached to the plane.
+	\item The Pod, dispenser and magazines must be attached to the plane.
 	\end{itemize}
 
+	\subparagraph{Equipment required:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
 
 \paragraph{ReqNo18-T}\mbox{}\\ % Ivan
 Requirement: \textit{The MWS must receive navigation data from the aircraft mission computer with a latency of no more than
@@ -238,14 +247,19 @@ landing gear is on the ground.
 %The hardware interlock engages when the landing gear is on the ground and not at a given altitude. This is of course also the case for the tex file Test_descriptions.tex
 
 \paragraph{ReqNo24-T}\mbox{}\\ % Lars J
-Requirement: \textit{The system shall be able to erase sensitive data upon input from a discrete zeroize signal from aircraft.}\\
+Requirement: \textit{The system shall be able to erase sensitive data upon input from a discrete zeroize signal from the aircraft.}\\
 
-This test verifies that the zeroize signal is received by the cockpit unit.
+This test verifies that the system can erase sensitive data.
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
 	\item The cockpit unit main power must be turned on.
 	\end{itemize}
-	
+
+	\subparagraph{Equipment required:}
+	\begin{itemize}
+	\item The cockpit unit and mission computer must be connected.
+	\end{itemize}
+
 \paragraph{ReqNo25-T}\mbox{}\\ % Ivan
 Requirement: \textit{The zeroize signal shall be received by the cockpit unit.}\\
 
@@ -303,8 +317,13 @@ This test verifies that the pod is operational at the given temperatures and pla
 
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
-	\item A thermometer must be provided.
+	\item None.
 	\end{itemize} 
+		
+	\subparagraph{Equipment required:}
+	\begin{itemize}
+	\item  A thermometer must be provided.
+	\end{itemize}
 	
 \paragraph{ReqNo30-T}\mbox{}\\ % Ivan
 Requirement: \textit{The system shall include a hardware implemented safety interlock to prevent dispensing on ground.}\\
@@ -363,7 +382,11 @@ This test verifies that the technicians are licensed in maintaining the system.
 	\item None.
 	\end{itemize}
 
-
+	\subparagraph{Equipment required:}
+	\begin{itemize}
+	\item None.
+	\end{itemize}
+	
 \paragraph{ReqNo39-T}\mbox{}\\ % Ivan
 Requirement: \textit{The chaffs and flares shall be transported in accordance to Military Standard Transportation and Movement Procedures (MILSTAMP).}\\
 
