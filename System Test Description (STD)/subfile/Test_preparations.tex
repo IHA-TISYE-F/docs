@@ -29,8 +29,10 @@ Requirement: \textit{Semi automatic shall initiate an intelligent threat respons
 This test verifies that the cockpit unit, in semi automatic mode, can send a signal that requests the pilots consent before deploying the payload. All combinations of payload and direction is tested
 \\
 	\subparagraph{Preparations needed:}
-	\begin{itemize}
+	\begin{itemize} 
 	\item Semi automatic mode is selected
+	\item The pod is loaded with chaffs or flares
+	\item The plane is airborne
 	\end{itemize}
 
 
@@ -82,7 +84,7 @@ Using manual mode, the operator tries to dispense two payloads simultaneously. I
 	\item A stop-watch must be provided.
 	\end{itemize}
 
-\paragraph{ReqNo9-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo9-T}\mbox{}\\ % Sergiu
 Requirement: \textit{The system shall be able to dispense a pattern of payloads programmable by the customer.}
 \\
 This test verifies that the program outputs in the desired pattern that was programmed by the customer. Afterwards it is loaded and tested on the pod to see the it dispense in the desired pattern.
@@ -90,6 +92,8 @@ This test verifies that the program outputs in the desired pattern that was prog
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
 	\item A voltmeter that tests the voltage that runs through the pod.
+	\item The pod is loaded with chaffs or flares
+	\item The plane is airborne
 	\end{itemize}
 
 \paragraph{ReqNo11-T}\mbox{}\\ % Lars J
@@ -143,7 +147,7 @@ Test-software installed on the mission computer requests status information and 
 	\item Test-software for the mission computer must be developed.
 	\end{itemize} 
 
-\paragraph{ReqNo16-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo16-T}\mbox{}\\ % Sergio=u
 Requirement: \textit{The system shall interface the aircraft intercom system to provide audio cues and warnings.}
 \\
 This test verifies that the aircraft intercom system receives information from the system.
@@ -207,7 +211,7 @@ It is assured that the aircraft is touching the ground. Then it is tried to disp
 	\item None.
 	\end{itemize} 
 
-\paragraph{ReqNo23-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo23-T}\mbox{}\\ % Sergiu
 Requirement: \textit{The hardware implemented safety lock shall be activated when the landing gear is on the ground.}
 \\
 This test verifies that the safety lock activates and remains active while the
@@ -216,6 +220,8 @@ landing gear is on the ground.
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
 	\item None.
+	\item The landing gear is on the ground.
+	\item The pod is empty, for safety reasons.
 	\end{itemize} 
 %Note to Sergiu:
 %The hardware interlock engages when the landing gear is on the ground and not at a given altitude. This is of course also the case for the tex file Test_descriptions.tex
@@ -268,7 +274,7 @@ The total weight of pod measured is measured using a weighing scale. It is noted
 	\item Weighing scale must be provided.
 	\end{itemize} 
 
-\paragraph{ReqNo29-T}\mbox{}\\ % Sergio
+\paragraph{ReqNo29-T}\mbox{}\\ % Sergiu
 Requirement: \textit{The pod shall be operational at temperatures of maximum 134 degree celsius on outer skin and 152 degree celsius on leading edge for maximum 3 minutes.}
 \\
 This test verifies that the pod is operational at temperatures of up to 134 celsius on the outer skin. It also checks that the pod is operational after it was subjugated to a temperature of 152 degrees for 3 minutes.
@@ -276,6 +282,7 @@ This test verifies that the pod is operational at temperatures of up to 134 cels
 	\subparagraph{Preparations needed:}
 	\begin{itemize}
 	\item Means of recording time and two temperature sensors, one placed on the outer skin and one placed on the leading edge.
+	\item The aircraft is airborne.
 	\end{itemize} 
 
 
