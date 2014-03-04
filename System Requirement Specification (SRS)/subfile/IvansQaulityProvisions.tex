@@ -1,0 +1,83 @@
+\subsection{System internal data requirements}
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline	  
+    Req. No & Quality provision  									& UR ref \\ \hline
+		N/A & A threat shall be simulated, after which the threat 	& UR-5 \\
+			& shall be visible in the cockpit in body frame format. & \\ \hline
+		N/A & A threat shall be simulated, after which information	& UR-5 \\
+			& about the threat shall be received from the 			&\\
+			& Electronics Control Unit (ECU). 						&\\ \hline
+		N/A & Upon power-on the aircraft mission computer shall 	& UR-6 \\
+			& receive initial system status and built-in test 		&\\
+			& results.												&\\ 	
+			& Conditions for the status information shall be changed&\\
+			& after which the corresponding status change shall be  &\\
+			& received by the aircraft mission computer. 			&\\ \hline
+		N/A & The TBD conditions which should trigger audio cues or & UR-7 \\
+			& warnings are simulated. The pilot shall receive the  	&\\
+			& audio cue or warning upon the condition being  		&\\				
+			& triggered.											&\\ \hline
+		N/A & Upon power-on the aircraft mission computer shall  	& UR-10 \\
+			& receive initial status information about each LRU. 	& \\
+			& Conditions for the status information shall be changed&\\
+			& after which the corresponding status change shall be 	&\\
+			& received by the aircraft mission computer. 			&\\ \hline
+		N/A & The MWS shall receive navigation data from the 		& - \\
+			& aircraft mission computer no later than 10 ms after 	&\\
+			& the navigation data has changed. 						&\\
+			& Navigation data shall include aircraft attitude, 		&\\
+			& heading, altitude and GPS data. 						&\\ \hline
+		N/A & The data bus connecting the cockpit unit with the MWS & UR-40 \\
+			& shall be verified as the MIL-STD-1553-B data bus. 	&\\ \hline
+		N/A & The data bus connecting the cockpit unit with the 	& UR-41 \\
+			& aircraft mission computer shall be verified as the  	&\\
+			& MIL-STD-1553-B data bus. 								&\\ \hline
+\hline
+    \end{tabular}
+\end{center}
+
+\subsection{Adaptations requirements}
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline
+    Req. No & Quality provision  									& UR ref \\ \hline
+		N/A & After the system has been installed a complete test of& UR-3 \\
+			& the aircraft shall be done. The test shall show all 	&\\
+			& systems operational. 									&\\ \hline
+    \hline
+    \end{tabular}
+\end{center}
+
+
+\subsection{Safety requirements}
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline
+    Req. No & Quality provision  									& UR ref \\ \hline
+		N/A & The implementation of a hardware implemented safety  	& UR-8 \\ 
+			& interlock shall be verified 							&\\ \hline
+		N/A & The hardware implemented safety interlock shall 		& UR-8\\ 
+			& prevent discharging of magasines when the landing gear&\\ 
+			& is on the ground.										&\\ \hline	
+    \hline
+    \end{tabular}
+\end{center}
+
+
+
+\subsection{Security and privacy requirements}
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline
+    Req. No & Quality provision  									& UR ref \\ \hline
+		N/A & After a discrete zeroize signal is received the system& UR-9 \\
+			& shall erase all sensitive data. 						&\\ \hline
+		N/A & It shall be verified that the zeroize signal is		& UR-9 \\
+			& received by the cockpit unit.							&\\ \hline
+		N/A & The temperature at which the magasines are stored		& - \\
+			& shall be verified to be between -10 degrees Celcius 	&\\
+			& and 70 degrees Celcius.								&\\ \hline
+    \hline
+    \end{tabular}
+\end{center}

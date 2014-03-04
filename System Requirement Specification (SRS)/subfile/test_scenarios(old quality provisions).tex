@@ -1,0 +1,227 @@
+\subsection{Required states and modes}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline	  
+    Req. No & Quality provision  									& UR ref \\ \hline
+		1. & This requirement shall be verified by inspection of the  & UR-12 \\
+            & system.                                               &\\ \hline
+		2. & Manual mode must be selected. The operator must then successfully dispense the desired payload in the desired direction. All combinations of payload and direction must be tested.                               &UR-13\\ \hline
+		3. & Semi-automatic mode must be selected. A threat must be simulated. It must be verified, that the system warns the operator. The operator must then be able to trigger the correct payload dispense.                     &UR-14\\ \hline
+        4. & Automatic mode must be selected. A threat must be     & UR-15 \\
+			& simulated. It must be verified, that the system warns &\\
+			& the operator and triggers the correct payload dispense.&\\ \hline	
+    \end{tabular}
+\end{center}
+
+\subsection{System capability requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline	  
+    Req. No & Quality provision  									& UR ref \\ \hline
+		5. & This requirement shall be verified by inspection of the  & UR-1 \\
+            & system.                                               &\\ \hline
+		6. & Manual mode must be selected. The operator must then successfully dispense the desired payload in the desired direction. All combinations of payload and direction must be tested.                               &UR-2\\ \hline
+		7. & Using the cockpit unit, the operator must disable the	& UR-11 \\
+			& power to the pod. It must then be verified, that the	&\\
+			& pod is without power.                                 &\\ \hline	
+        8. & Using manual mode, the operator must be able to       & UR-20 \\
+			& dispense at least two payloads within 0.1 sec.        &\\ \hline	 
+        9. & The operator must program the system. The operator    & UR-21 \\
+			& must then dispense the desired payload in the desired &\\ 
+            & direction. It must be verified, that the payload was  &\\    
+            & dispense in the desired pattern.                      &\\ \hline	            
+    \end{tabular}
+\end{center}
+
+\subsection{System external interface requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    10. & In manual mode it is attempted to dispense while on ground. It is checked whether the payloads are dispensed or not. & UR-8 \\ \hline
+    11. & The mission computer of the aircraft is forced to send a string containing 'zeroize'. It is checked whether the data contained within the system is erased. & UR-9 \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsection{System internal interface requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline	  
+    Req. No & Quality provision  									& UR ref \\ \hline
+		12. & This requirement shall be verified by inspection of the  & UR-40 \\
+            & system.                                               &\\ \hline           
+    \end{tabular}
+\end{center}
+
+\subsection{System internal data requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline	  
+    Req. No & Quality provision  									& UR ref \\ \hline
+		13. & A threat shall be simulated, after which the threat 	& UR-5 \\
+			& shall be visible in the cockpit in body frame format. & \\ \hline
+		14. & A threat shall be simulated, after which information	& UR-5 \\
+			& about the threat shall be received from the 			&\\
+			& Electronics Control Unit (ECU). 						&\\ \hline
+		15. & Upon power-on the aircraft mission computer shall 	& UR-6 \\
+			& receive initial system status and built-in test 		&\\
+			& results.												&\\ 	
+			& Conditions for the status information shall be changed&\\
+			& after which the corresponding status change shall be  &\\
+			& received by the aircraft mission computer. 			&\\ \hline
+		16. & The TBD conditions which should trigger audio cues or warnings are simulated. The pilot shall receive the  	audio cue or warning upon the condition being  		&UR-7\\				
+			& triggered.											&\\ \hline
+		17. & Upon power-on the aircraft mission computer shall  	& UR-10 \\
+			& receive initial status information about each LRU. 	& \\
+			& Conditions for the status information shall be changed&\\
+			& after which the corresponding status change shall be 	&\\
+			& received by the aircraft mission computer. 			&\\ \hline
+		18. & The MWS shall receive navigation data from the 		& No ref. \\
+			& aircraft mission computer no later than 10 ms after 	&\\
+			& the navigation data has changed. 						&\\
+			& Navigation data shall include aircraft attitude, 		&\\
+			& heading, altitude and GPS data. 						&\\ \hline
+		19. & The data bus connecting the cockpit unit with the MWS shall be verified as the MIL-STD-1553-B data bus. 	&UR-40\\ \hline
+		20. & The data bus connecting the cockpit unit with the 	& UR-41 \\
+			& aircraft mission computer shall be verified as the  	&\\
+			& MIL-STD-1553-B data bus. 								&\\ \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Adaptations requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  									& UR ref \\ \hline
+		21. & After the system has been installed a complete test of& UR-3 \\
+			& the aircraft shall be done. The test shall show all 	&\\
+			& systems operational. 									&\\ \hline
+    \end{tabular}
+\end{center}
+
+
+\subsection{Safety requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  									& UR ref \\ \hline
+		22. & The implementation of a hardware implemented safety  	& UR-8 \\ 
+			& interlock shall be verified 							&\\ \hline
+		23. & The hardware implemented safety interlock shall 		& UR-8\\ 
+			& prevent discharging of magasines when the landing gear is on the ground.										&\\ \hline	
+    \end{tabular}
+\end{center}
+
+
+
+\subsection{Security and privacy requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  									& UR ref \\ \hline
+		24. & After a discrete zeroize signal is received the system& UR-9 \\
+			& shall erase all sensitive data. 						&\\ \hline
+		25. & It shall be verified that the zeroize signal is		& UR-9 \\
+			& received by the cockpit unit.							&\\ \hline
+		26. & The temperature at which the magasines are stored		& No ref. \\
+			& shall be verified to be between -10 degrees Celcius 	&\\
+			& and 70 degrees Celcius.								&\\ \hline
+    \end{tabular}
+\end{center}
+\subsection{System environment requirements}
+\begin{center}
+   	\begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+27. & Functionality of the pod verified under steady state acceleration levels of 5g forward, 2.5g backward, 25g upward or 11g downward.&UR-30\\ \hline
+	28. &The total weight of pod measured to be below 270 kg.&UR-31\\ \hline
+	29. &The pod tested at temperatures of maximum 134 degree Celcius on outer skin and 152 degree Celcius on leading edge for maximum 3 minutes for functionality.&UR-33\\	 
+\hline
+    \end{tabular}
+\end{center}
+
+\subsection{Computer resource requirements}
+\begin{itemize}
+\item \textbf{Hardware}
+ 	\begin{center}
+   	\begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    30. &The hardware implemented safety interlock shall prevent discharging of magasines when the landing gear is on the ground.
+ &UR-8\\
+    \hline
+    \end{tabular}
+	\end{center}
+\item \textbf{Software}
+ 	\begin{center}
+   	\begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    31. &The system applied the method for loading software to MWS. &UR-16\\
+    \hline
+    \end{tabular}
+	\end{center}
+\item \textbf{Communication}\\
+No requirements.
+\end{itemize}
+
+\subsection{System quality factors}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l | }
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    32. & Checked for reliability. & No ref. \\ \hline
+    33. & The complete model of the system ran in the computer without failure.& No ref.\\
+\hline
+34. & The damages on the cockpit tested for re-usability.& No ref. \\ \hline
+
+    \end{tabular}
+\end{center}
+
+\subsection{Design and construction constraints}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    35. & The physical dimensions of the pod is measured using af tape Measure. It is checked whether the dimensions are within the constraints. & No ref.\\ \hline
+    \end{tabular}
+\end{center}
+
+
+\subsection{Personnel-related requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    36. & The aircraft is loaded with payloads before takeoff. In air it is attempted to dispense the payloads. It is checked whether the loaded payloads are dispensed. & No ref. \\ \hline
+    \end{tabular}
+\end{center}
+
+
+\subsection{Training-related requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    37. & Pilots attend a course on the system. Then they are tested by an oral examination & No ref. \\ \hline
+    38. & Technicians attend a course on technical parts of the system. Then they are tested by an oral examination & No ref. \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Logistics-related requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    39. & The transportation of chaffs and flares must comply with MILSTAMP. & No ref. \\ \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Packaging requirements}
+\begin{center}
+    \begin{tabular}{ | l | p{9cm} | l |}
+    \hline
+    Req. No & Quality provision  & UR ref \\ \hline
+    40. & Packing and labeling of chaffs and flares must comply with MIL-STD-2073-1E. & No ref. \\ \hline
+    \end{tabular}
+\end{center}

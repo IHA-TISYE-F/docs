@@ -1,0 +1,88 @@
+\documentclass[a4paper, oneside, 11pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+%\usepackage{url}
+\usepackage{caption}
+%\usepackage{calc}
+\usepackage[square]{natbib}
+\usepackage{aas_macros}
+\usepackage{tabularx}
+\bibpunct{(}{)}{;}{a}{}{,}
+\addtolength{\textheight}{+3cm}
+\begin{document}
+\input{./titleV2.tex}
+\addtolength{\topmargin}{-2cm}
+\tableofcontents
+%\newpage
+\noindent
+\section{Stakeholders}
+\input{./subfile/stakeholder.tex}
+\section{Subcontracter Information}
+\input{./subfile/Subcontracter_information.tex}
+\section{Revision history}
+\input{./subfile/revision_history.tex}
+\section{Scope}
+%\input{./subfile/scope.tex}
+\subsection{Identification}
+\input{./subfile/identification.tex}
+\subsection{System overview}
+\input{./subfile/System_overview.tex}
+\subsection{Document overview}
+\input{./subfile/Document_overview.tex}
+\section{Referenced documents}
+\input{./subfile/Referenced_documents.tex}
+\section{Requirements}
+%\input{./subfile/Requirements.tex}
+\subsection{Required states and modes}
+\input{./subfile/Required_states_and_modes.tex}
+\subsection{System capability requirements}
+\input{./subfile/System_capability_requirements.tex}
+\subsection{System external interface requirements}
+\input{./subfile/System_external_interface_requirements.tex}
+\subsection{System internal interface requirements}
+\input{./subfile/System_internal_interface_requirements.tex}
+\subsection{System internal data requirements}
+\input{./subfile/System_internal_data_requirements.tex}
+\subsection{Adaptation requirements}
+\input{./subfile/Adaptation_requirements.tex}
+\subsection{Safety requirements}
+\input{./subfile/Safety_requirements.tex}
+\subsection{Security and privacy requirements}
+\input{./subfile/Security_and_privacy_requirements.tex}
+\subsection{System environment requirements}
+\input{./subfile/System_environment_requirements.tex}
+\subsection{Computer resource requirements}
+\input{./subfile/Computer_resource_requirements.tex}
+\subsection{System quality factors}
+\subsubsection{Design goals}
+\input{./subfile/System_quality_factors.tex}
+\subsection{Design and construction constraints}
+\input{./subfile/Design_and_construction_constraints.tex}
+\subsection{Personnel-related requirements}
+\input{./subfile/Personnel_related_requirements.tex}
+\subsection{Training-related requirements}
+\input{./subfile/Training_related_requirements.tex}
+\subsection{Logistics-related requirements}
+\input{./subfile/Logistics_related_requirements.tex}
+\subsection{Packaging requirements}
+\input{./subfile/Packaging_requirements.tex}
+%\subsection{Other requirements}
+%\input{./subfile/Other_requirements.tex}
+\section{Quality provisions}
+\input{./subfile/Quality_provisions.tex}
+%\section{Requirements traceability}
+%\input{./subfile/Requirements_traceability.tex}
+%\section{Other}
+%\input{./subfile/other.tex}
+
+%\newpage
+%\bibliographystyle{plain}
+%\bibliography{SRS}
+\end{document}

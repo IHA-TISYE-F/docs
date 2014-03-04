@@ -1,0 +1,28 @@
+\begin{center}
+    \begin{tabular}{ | l | l | l |}
+    \hline
+	Req. No & Requirement  & UR ref \\ \hline
+    N/A & Threats shall be transmitted to the aircraft mission& UR-5\\ 
+    &computer in body frame format (relative to aircraft) for&\\ 	&displaying purposes.&   \\ \hline
+	N/A & Threat information will be provided by the Electronics &UR-\\ &Control Unit (ECU).  & \\ \hline
+	N/A & The system shall provide the aircraft mission& UR-6\\ &computer with status information and built-in test results.  &\\ \hline
+	N/A & The system shall interface the aircraft intercom& UR-7\\ 
+	&system to provide audio cues and warnings.  & \\ \hline
+	N/A & The system status on individual LRU level shall be& UR-10\\ 
+	&provided by cockpit unit. & \\ \hline
+	N/A & The MWS must receive navigation data from the& UR-\\ &aircraft mission computer with a latency of no more than &\\
+	&10 ms. Navigation data includes aircraft attitude,&\\ &heading, altitude and GPS data. &\\ \hline
+	N/A & The cockpit unit shall communicate with the MWS via& UR-40\\ &a MIL-STD-1553-B data bus. &  \\ \hline	
+    \hline
+    \end{tabular}
+\end{center}
+
+
+\begin{center}
+    \begin{tabular}{ | l |l | p|}
+    \hline
+    Req. No & Requirement  & UR ref \\ \hline
+    Req. No & Specific requirements  & us ref number \\ \hline
+    \hline
+    \end{tabular}
+\end{center}
